@@ -165,9 +165,69 @@ This example demonstrates metadata exposed for discovery:
 }
 ```
 
+
+## Stakeholders
+
+By adopting a standardized JSON format, OceanOPS aims to enhance data sharing, quality, and discoverability. This initiative will directly benefit:
+
+- **Researchers**, by providing high-quality, interoperable data for analysis and innovation.
+- **Agencies**, by streamlining metadata submission and retrieval processes, ensuring compliance with global standards.
+- **Software Developers**, by offering a structured, semantic format that simplifies integration into applications.
+
+Using JSON Schema for validation and JSON-LD for semantic enrichment ensures our data is robust, interoperable, and future-proof. We invite all stakeholders to collaborate with us in implementing this standard to improve the global oceanographic data ecosystem.
+
 ---
 
-## Conclusion
+## Development Strategy
 
-By adopting a standardized JSON format, OceanOPS aims to enhance data sharing, quality, and discoverability. Using JSON Schema for validation and JSON-LD for semantic enrichment ensures our data is robust, interoperable, and future-proof. We invite all stakeholders to collaborate with us in implementing this standard to improve the global oceanographic data ecosystem.
+Our strategy for development focuses on an iterative approach to meet the three core use cases: input, output, and discoverability. Here is how we plan to proceed:
+
+1. **Proof of Concept (POC) Services**:
+   - **Input Validation Application**: A simple application that validates metadata submissions using a basic version of the JSON Schema.
+   - **API Service**: A minimal API that allows metadata retrieval in the standardized JSON format.
+   - **Discoverability/Exposure Service**: For this use case, we plan to create an ODIS-compatible metadata export service. This service will demonstrate how metadata can be exposed for harvesting and discovery by other systems.
+
+2. **Incremental Improvement Through Feedback**:
+   - We will gather feedback on these POCs from stakeholders and the community.
+   - Based on this feedback, we will refine the JSON Schema, adapt the applications, and introduce new fields as needed.
+
+3. **SCRUM Sprints**:
+   - Development will proceed in short, focused sprints to ensure continuous delivery and improvement.
+   - Each sprint will focus on incremental enhancements to one or more of the services.
+   - Stakeholder feedback will guide prioritization and ensure the schema evolves to meet real-world needs.
+
+4. **Gradual Expansion**:
+   - New fields and features will be introduced gradually to ensure backward compatibility and minimize disruption.
+
+---
+
+## Community Development
+
+The OceanJSON project is actively developed and maintained on GitHub.
+
+We encourage contributions from the community! Here's how you can help:
+
+- **Raise Issues:** Found a bug or have a suggestion? Please raise an issue on our GitHub repository.
+- **Contribute:** Fork the repository, make changes, and submit a pull request!
+
+The current version is `0.0.1` and is still a draft and has not been officially published yet. We are in the process of defining the Key Categories.
+
+The platform entities form the central node of the schema.
+
+### A platform has 7 key blocks of metadata:
+
+1. **Identification**  
+   Key identifiers
+2. **Operations**  
+   Deployment, retrieval and maintenance logistics
+3. **Hardware**  
+   Instrumentation, tech configuration, and sensors
+4. **Status**  
+   Performance, operational status, notifications, spatio-temporal data
+5. **Affiliations**  
+   Programs, networks, agencies, sites, ships, cruises, contacts, etc.
+6. **Data**  
+   Metadata related to observations from each GDAC
+7. **Updates**  
+   Changes to metadata: field changed, when, by who, and how
 
