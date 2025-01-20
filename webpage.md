@@ -165,6 +165,7 @@ This example demonstrates metadata exposed for discovery:
 }
 ```
 
+---
 
 ## Stakeholders
 
@@ -210,7 +211,9 @@ We encourage contributions from the community! Here's how you can help:
 - **Raise Issues:** Found a bug or have a suggestion? Please raise an issue on our GitHub repository.
 - **Contribute:** Fork the repository, make changes, and submit a pull request!
 
-The current version is `0.0.1` and is still a draft and has not been officially published yet. We are in the process of defining the Key Categories.
+The current version is `0.0.1` and is still a draft and has not been officially published yet. 
+
+We are in the process of defining the Key Categories.
 
 The platform entities form the central node of the schema.
 
