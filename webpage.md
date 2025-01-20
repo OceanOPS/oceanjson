@@ -208,7 +208,7 @@ The OceanJSON project is actively developed and maintained on GitHub.
 
 We encourage contributions from the community! Here's how you can help:
 
-- **Raise Issues:** Found a bug or have a suggestion? Please raise an issue on our GitHub repository.
+- **Raise Issues:** Found a bug or have a suggestion? Please raise an issue on our [OceanJSON GitHub Repository](https://github.com/OceanOPS/oceanjson)
 - **Contribute:** Fork the repository, make changes, and submit a pull request!
 
 The current version is `0.0.1` and is still a draft and has not been officially published yet. 
