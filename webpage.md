@@ -1,4 +1,6 @@
-# Understanding Our Ocean Data Standards
+# OceanJSON Metadata Standard
+
+A comprehensive metadata standard for operational oceanography data management.
 
 In operational oceanography, sharing data effectively is essential to improving our understanding of the ocean. To achieve this, OceanOPS is introducing a standardized JSON format for platform metadata and data. This initiative will ensure data is easily shared, validated, and used by the global oceanographic community. This page explains the purpose, technology, and examples of our approach, designed for both technical and non-technical users.
 
