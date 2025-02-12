@@ -1,0 +1,25 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/ship_type.schema.json",
+	"title": "Ship Type",
+	"description": "Classification of ship types used for deployment, retrieval, or other mission-related activities.",
+	"type": "object",
+	"oceanMetaCode": "VTY",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "Unique identifier for the ship type.",
+		"oceanMetaCode": "VTY-01",
+		"oceanMetaType": ""
+	  },
+	  "name": {
+		"type": "string",
+		"description": "Name of the ship type (e.g., Research Vessel, Cargo Ship, Icebreaker).",
+		"oceanMetaCode": "VTY-02",
+		"oceanMetaType": ""
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

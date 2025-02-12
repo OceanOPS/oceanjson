@@ -1,0 +1,31 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/platform_model.schema.json",
+	"title": "Platform Model",
+	"description": "Represents a specific model of a platform, including its type classification.",
+	"type": "object",
+	"oceanMetaCode": "PTM",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "Unique identifier for the platform model.",
+		"oceanMetaCode": "PTM-01",
+		"oceanMetaType": ""
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The name of the platform model.",
+		"oceanMetaCode": "PTM-02",
+		"oceanMetaType": ""
+	  },
+	  "type": {
+		"$ref": "platform_type.schema.json",
+		"description": "The classification type of the platform.",
+		"oceanMetaCode": "PTM-03",
+		"oceanMetaType": "PLT"
+	  }
+	},
+	"required": ["id", "name", "type"],
+	"additionalProperties": false
+  }
+  

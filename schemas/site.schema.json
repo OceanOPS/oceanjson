@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/site.schema.json",
+	"title": "Site",
+	"description": "Represents a specific location associated with deployments or observations.",
+	"type": "object",
+	"oceanMetaCode": "SIT",
+	"properties": {
+	  "name": {
+		"type": "string",
+		"description": "The name of the site (e.g., 'Bermuda Atlantic Time-series Study', 'Pacific Mooring Site').",
+		"oceanMetaCode": "SIT-01"
+	  },
+	  "wkt": {
+		"type": "string",
+		"description": "The Well-Known Text (WKT) representation of the site's geometry, defining its spatial location (e.g., POINT, POLYGON).",
+		"oceanMetaCode": "SIT-02"
+	  }
+	},
+	"required": ["name"],
+	"additionalProperties": false
+  }
+  

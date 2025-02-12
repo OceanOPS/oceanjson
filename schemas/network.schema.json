@@ -1,0 +1,25 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/network.schema.json",
+	"title": "Network",
+	"description": "A group of platform missions.",
+	"type": "object",
+	"oceanMetaCode": "NET",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "Unique identifier for the network.",
+		"oceanMetaCode": "NET-01",
+		"oceanMetaType": "string"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The official name of the network.",
+		"oceanMetaCode": "NET-02",
+		"oceanMetaType": "string"
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

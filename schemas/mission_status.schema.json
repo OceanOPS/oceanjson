@@ -1,0 +1,33 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/mission_status.schema.json",
+	"title": "Mission Status",
+	"description": "Defines the operational status of a platform mission, including its type and time period.",
+	"type": "object",
+	"oceanMetaCode": "MST",
+	"properties": {
+	  "start_date": {
+		"type": "string",
+		"format": "date",
+		"description": "The date when the mission status starts.",
+		"oceanMetaCode": "MST-01",
+		"oceanMetaType": ""
+	  },
+	  "end_date": {
+		"type": "string",
+		"format": "date",
+		"description": "The date when the mission status ends, if applicable.",
+		"oceanMetaCode": "MST-02",
+		"oceanMetaType": ""
+	  },
+	  "type": {
+		"$ref": "status_type.schema.json",
+		"description": "The classification of the mission status, such as 'Operational', 'Inactive', or 'Recovered'.",
+		"oceanMetaCode": "MST-03",
+		"oceanMetaType": "STT"
+	  }
+	},
+	"required": ["start_date", "type"],
+	"additionalProperties": false
+  }
+  

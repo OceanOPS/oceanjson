@@ -1,0 +1,28 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/data_processing_method.schema.json",
+	"title": "Data Processing Method",
+	"description": "Defines the method used for processing observational data collected during oceanographic missions.",
+	"type": "object",
+	"oceanMetaCode": "DPM",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the data processing method.",
+		"oceanMetaCode": "DPM-01"
+	  },
+	  "ref": {
+		"type": "string",
+		"description": "A reference code or external identifier related to the data processing method.",
+		"oceanMetaCode": "DPM-02"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The name of the data processing method, describing the specific algorithm, technique, or standard used.",
+		"oceanMetaCode": "DPM-03"
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

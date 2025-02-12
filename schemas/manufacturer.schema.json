@@ -1,0 +1,24 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/manufacturer.schema.json",
+	"title": "Manufacturer",
+	"description": "Details about the manufacturer of sensors, platforms, or related equipment.",
+	"type": "object",
+	"oceanMetaCode": "MAN",
+	"properties": {
+	  "name": {
+		"type": "string",
+		"description": "The name of the manufacturer.",
+		"oceanMetaCode": "MAN-01"
+	  },
+	  "url": {
+		"type": "string",
+		"format": "uri",
+		"description": "The official website or contact URL of the manufacturer.",
+		"oceanMetaCode": "MAN-02"
+	  }
+	},
+	"required": ["name"],
+	"additionalProperties": false
+  }
+  

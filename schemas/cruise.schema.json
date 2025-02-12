@@ -1,0 +1,48 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/cruise.schema.json",
+	"title": "Cruise",
+	"description": "Operational period of a ship.",
+	"type": "object",
+	"oceanMetaCode": "CRU",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "Unique identifier for the cruise.",
+		"oceanMetaCode": "CRU-01",
+		"oceanMetaType": "string"
+	  },
+	  "start_date": {
+		"type": "string",
+		"format": "date",
+		"description": "Start date of the cruise.",
+		"oceanMetaCode": "CRU-02",
+		"oceanMetaType": "date"
+	  },
+	  "end_date": {
+		"type": "string",
+		"format": "date",
+		"description": "End date of the cruise.",
+		"oceanMetaCode": "CRU-03",
+		"oceanMetaType": "date"
+	  },
+	  "lines": {
+		"type": "array",
+		"description": "Lines surveyed or traversed during the cruise.",
+		"items": {
+		  "$ref": "https://github.com/OceanOPS/oceanjson/schemas/line.schema.json"
+		},
+		"oceanMetaCode": "CRU-04",
+		"oceanMetaType": "LIN[]"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "Official name of the cruise.",
+		"oceanMetaCode": "CRU-05",
+		"oceanMetaType": "string"
+	  }
+	},
+	"required": ["id", "start_date", "name"],
+	"additionalProperties": false
+  }
+  

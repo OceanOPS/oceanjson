@@ -1,0 +1,69 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/retrieval.schema.json",
+	"title": "Retrieval",
+	"description": "Details regarding the retrieval of a platform after mission completion.",
+	"type": "object",
+	"oceanMetaCode": "RET",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "Unique identifier for the retrieval record.",
+		"oceanMetaCode": "RET-01",
+		"oceanMetaType": ""
+	  },
+	  "start_date": {
+		"type": "string",
+		"format": "date",
+		"description": "Date when the retrieval operation began.",
+		"oceanMetaCode": "RET-02",
+		"oceanMetaType": ""
+	  },
+	  "end_date": {
+		"type": "string",
+		"format": "date",
+		"description": "Date when the retrieval operation was completed.",
+		"oceanMetaCode": "RET-03",
+		"oceanMetaType": ""
+	  },
+	  "ship": {
+		"$ref": "ship.schema.json",
+		"description": "Ship that recovered the platform.",
+		"oceanMetaCode": "RET-04",
+		"oceanMetaType": "SHP"
+	  },
+	  "latitude": {
+		"type": "number",
+		"format": "float",
+		"minimum": -90,
+		"maximum": 90,
+		"description": "Latitude of the platform's retrieval location in decimal WGS84 (4326).",
+		"oceanMetaCode": "RET-05",
+		"oceanMetaType": ""
+	  },
+	  "longitude": {
+		"type": "number",
+		"format": "float",
+		"minimum": -180,
+		"maximum": 180,
+		"description": "Longitude of the platform's retrieval location in decimal WGS84 (4326).",
+		"oceanMetaCode": "RET-06",
+		"oceanMetaType": ""
+	  },
+	  "comments": {
+		"type": "string",
+		"description": "Additional comments or notes about the retrieval.",
+		"oceanMetaCode": "RET-07",
+		"oceanMetaType": ""
+	  },
+	  "ending_cause": {
+		"$ref": "ending_cause.schema.json",
+		"description": "Reason why the platform is considered as closed (e.g., recovered, lost).",
+		"oceanMetaCode": "RET-08",
+		"oceanMetaType": "ENC"
+	  }
+	},
+	"required": ["id", "start_date", "end_date", "ending_cause"],
+	"additionalProperties": false
+  }
+  

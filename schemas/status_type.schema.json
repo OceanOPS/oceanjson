@@ -1,0 +1,31 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/status_type.schema.json",
+	"title": "Status Type",
+	"description": "Defines the types of mission status (e.g., Inactive, Operational) with a ranking system for priority or classification.",
+	"type": "object",
+	"oceanMetaCode": "STT",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "Unique identifier for the status type.",
+		"oceanMetaCode": "STT-01",
+		"oceanMetaType": ""
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The descriptive name of the status type (e.g., 'Operational', 'Inactive').",
+		"oceanMetaCode": "STT-02",
+		"oceanMetaType": ""
+	  },
+	  "rank": {
+		"type": "integer",
+		"description": "The ranking or priority level of the status type, where lower numbers may represent higher priority.",
+		"oceanMetaCode": "STT-03",
+		"oceanMetaType": ""
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

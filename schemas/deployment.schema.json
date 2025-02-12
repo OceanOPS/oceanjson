@@ -1,0 +1,81 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/deployment.schema.json",
+	"title": "Deployment",
+	"description": "The initial operation of a mission - when the platform is activated.",
+	"type": "object",
+	"oceanMetaCode": "DEP",
+	"properties": {
+	  "start_date": {
+		"type": "string",
+		"format": "date",
+		"description": "Date the mission starts, date from which the platform is ready to operate (Launch/Activation).",
+		"oceanMetaCode": "DEP-01",
+		"oceanMetaType": "string"
+	  },
+	  "latitude": {
+		"type": "number",
+		"minimum": -90,
+		"maximum": 90,
+		"description": "Latitude of platform deployment in decimal WGS84 (4326).",
+		"oceanMetaCode": "DEP-02",
+		"oceanMetaType": "number"
+	  },
+	  "longitude": {
+		"type": "number",
+		"minimum": -180,
+		"maximum": 180,
+		"description": "Longitude of platform deployment in decimal WGS84 (4326).",
+		"oceanMetaCode": "DEP-03",
+		"oceanMetaType": "number"
+	  },
+	  "ship": {
+		"$ref": "ship.schema.json",
+		"description": "Ship used during the deployment, if applicable.",
+		"oceanMetaCode": "DEP-04",
+		"oceanMetaType": "SHP"
+	  },
+	  "cruise": {
+		"$ref": "cruise.schema.json",
+		"description": "Cruise associated with the deployment, if applicable.",
+		"oceanMetaCode": "DEP-05",
+		"oceanMetaType": "CRU"
+	  },
+	  "max_water_depth": {
+		"type": "number",
+		"description": "The water depth in meters at the mooring position.",
+		"oceanMetaCode": "DEP-06",
+		"oceanMetaType": "number"
+	  },
+	  "platform_altitude": {
+		"type": "number",
+		"description": "Elevation, in meters, of the deployed element above the sea level.",
+		"oceanMetaCode": "DEP-07",
+		"oceanMetaType": "number"
+	  },
+	  "method": {
+		"$ref": "deployment_method.schema.json",
+		"description": "Deployment method used for the platform.",
+		"oceanMetaCode": "DEP-08",
+		"oceanMetaType": "DMT"
+	  },
+	  "country": {
+		"$ref": "country.schema.json",
+		"description": "Country responsible for the deployment.",
+		"oceanMetaCode": "DEP-09",
+		"oceanMetaType": "COU"
+	  },
+	  "sites": {
+		"type": "array",
+		"items": {
+		  "$ref": "site.schema.json"
+		},
+		"description": "List of sites associated with the deployment.",
+		"oceanMetaCode": "DEP-10",
+		"oceanMetaType": "SIT[]"
+	  }
+	},
+	"required": ["start_date", "latitude", "longitude"],
+	"additionalProperties": false
+  }
+  

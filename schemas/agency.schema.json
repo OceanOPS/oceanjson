@@ -1,0 +1,18 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/agency.schema.json",
+	"title": "Agency",
+	"description": "An agency is an organization, a manufacturer, a data center, etc.",
+	"type": "object",
+	"oceanMetaCode": "AGN",
+	"properties": {
+	  "name": {
+		"type": "string",
+		"description": "The name of the agency, which can be an organization, manufacturer, data center, etc.",
+		"oceanMetaCode": "AGN-01"
+	  }
+	},
+	"required": ["name"],
+	"additionalProperties": false
+  }
+  

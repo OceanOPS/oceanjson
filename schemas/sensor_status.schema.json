@@ -1,0 +1,28 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/sensor_status.schema.json",
+	"title": "Sensor Status",
+	"description": "Defines the operational status of a sensor installed on an oceanographic platform.",
+	"type": "object",
+	"oceanMetaCode": "SSS",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the sensor status.",
+		"oceanMetaCode": "SSS-01"
+	  },
+	  "ref": {
+		"type": "string",
+		"description": "A reference code for the sensor status, which may align with standardized codes used in oceanographic metadata.",
+		"oceanMetaCode": "SSS-02"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The name describing the current operational status of the sensor (e.g., Operational, Non-operational, Under Maintenance).",
+		"oceanMetaCode": "SSS-03"
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

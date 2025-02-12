@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/tracking_system.schema.json",
+	"title": "Tracking System",
+	"description": "Defines the system used for tracking the location of oceanographic platforms, such as GPS, Argos, or GNSS.",
+	"type": "object",
+	"oceanMetaCode": "TRS",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the tracking system.",
+		"oceanMetaCode": "TRS-01"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The name of the tracking system (e.g., GPS, Argos, GNSS).",
+		"oceanMetaCode": "TRS-02"
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

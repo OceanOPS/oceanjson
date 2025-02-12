@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/latency.schema.json",
+	"title": "Latency",
+	"description": "Represents the latency configuration, describing data transmission or processing delays.",
+	"type": "object",
+	"oceanMetaCode": "LAY",
+	"properties": {
+	  "ref": {
+		"type": "string",
+		"description": "A unique reference identifier for the latency configuration.",
+		"oceanMetaCode": "LAY-01"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The name or description of the latency profile (e.g., 'Real-Time', 'Delayed-Mode').",
+		"oceanMetaCode": "LAY-02"
+	  }
+	},
+	"required": ["ref", "name"],
+	"additionalProperties": false
+  }
+  

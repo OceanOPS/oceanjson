@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/telecom_service.schema.json",
+	"title": "Telecom Service",
+	"description": "Defines the telecommunications services used for data transmission in oceanographic platforms.",
+	"type": "object",
+	"oceanMetaCode": "TSV",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the telecom service.",
+		"oceanMetaCode": "TSV-01"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The name of the telecom service (e.g., Iridium, Argos, Inmarsat, GSM).",
+		"oceanMetaCode": "TSV-02"
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

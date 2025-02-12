@@ -1,0 +1,28 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/sensor_location.schema.json",
+	"title": "Sensor Location",
+	"description": "Defines the location details of a sensor installed on an oceanographic platform.",
+	"type": "object",
+	"oceanMetaCode": "SLC",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the sensor location.",
+		"oceanMetaCode": "SLC-01"
+	  },
+	  "ref": {
+		"type": "string",
+		"description": "A reference code representing the sensor's location, which may be used for internal or external linking.",
+		"oceanMetaCode": "SLC-02"
+	  },
+	  "pub47_ref": {
+		"type": "string",
+		"description": "A reference to WMO Publication No. 47 (Pub47) if the sensor's location is registered there.",
+		"oceanMetaCode": "SLC-03"
+	  }
+	},
+	"required": ["id"],
+	"additionalProperties": false
+  }
+  

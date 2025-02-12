@@ -1,0 +1,28 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/sensor_unit.schema.json",
+	"title": "Sensor Unit",
+	"description": "Defines the measurement unit associated with sensors for ocean observing platforms.",
+	"type": "object",
+	"oceanMetaCode": "SUN",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the sensor unit.",
+		"oceanMetaCode": "SUN-01"
+	  },
+	  "wigos_code": {
+		"type": "string",
+		"description": "The WIGOS code corresponding to the sensor unit for standardized identification.",
+		"oceanMetaCode": "SUN-02"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The name of the measurement unit (e.g., Celsius, Pascal, Meters per second).",
+		"oceanMetaCode": "SUN-03"
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

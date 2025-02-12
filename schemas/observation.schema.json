@@ -1,0 +1,48 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/observation.schema.json",
+	"title": "Observation",
+	"description": "A measurement event representing data collected by an observing platform.",
+	"type": "object",
+	"oceanMetaCode": "OBS",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "Unique identifier for the observation event.",
+		"oceanMetaCode": "OBS-01",
+		"oceanMetaType": ""
+	  },
+	  "observation_date": {
+		"type": "string",
+		"format": "date-time",
+		"description": "The date and time when the observation was recorded.",
+		"oceanMetaCode": "OBS-02",
+		"oceanMetaType": ""
+	  },
+	  "latitude": {
+		"type": "number",
+		"minimum": -90,
+		"maximum": 90,
+		"description": "Latitude of the observation in decimal degrees (WGS84).",
+		"oceanMetaCode": "OBS-03",
+		"oceanMetaType": ""
+	  },
+	  "longitude": {
+		"type": "number",
+		"minimum": -180,
+		"maximum": 180,
+		"description": "Longitude of the observation in decimal degrees (WGS84).",
+		"oceanMetaCode": "OBS-04",
+		"oceanMetaType": ""
+	  },
+	  "variable": {
+		"$ref": "https://github.com/OceanOPS/oceanjson/schemas/variable.schema.json",
+		"description": "The variable being measured in the observation.",
+		"oceanMetaCode": "OBS-05",
+		"oceanMetaType": "VAR"
+	  }
+	},
+	"required": ["id", "observation_date", "latitude", "longitude", "variable"],
+	"additionalProperties": false
+  }
+  

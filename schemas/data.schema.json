@@ -1,0 +1,24 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/data.schema.json",
+	"title": "Data",
+	"description": "A mission's measurement activity properties, encapsulating observation events.",
+	"type": "object",
+	"oceanMetaCode": "DAT",
+	"properties": {
+	  "observations": {
+		"type": "array",
+		"description": "A mission's data measurement events.",
+		"oceanMetaCode": "DAT-01",
+		"oceanMetaType": "OBS[]",
+		"items": {
+		  "$ref": "https://github.com/OceanOPS/oceanjson/schemas/observation.schema.json"
+		},
+		"minItems": 0,
+		"uniqueItems": true
+	  }
+	},
+	"required": ["observations"],
+	"additionalProperties": false
+  }
+  

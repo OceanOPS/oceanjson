@@ -1,0 +1,18 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/ending_cause.schema.json",
+	"title": "Ending Cause",
+	"description": "Reason why the platform is considered as closed (e.g., recovered, lost).",
+	"type": "object",
+	"oceanMetaCode": "ENC",
+	"properties": {
+	  "name": {
+		"type": "string",
+		"description": "The reason for the termination of the platform's mission (e.g., 'Recovered', 'Lost at Sea', 'Decommissioned', 'Mission Completed').",
+		"oceanMetaCode": "ENC-01"
+	  }
+	},
+	"required": ["name"],
+	"additionalProperties": false
+  }
+  

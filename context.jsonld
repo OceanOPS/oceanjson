@@ -1,0 +1,75 @@
+{
+	"@context": {
+	  "@version": 1.1,
+	  "@vocab": "https://oceanjson.org/vocab/",
+  
+	  "mission": "Mission",
+	  "wigos_id": "wigos_id",
+	  "start_date": "start_date",
+	  "end_date": "end_date",
+	  "passport_delivery_date": "passport_delivery_date",
+	  "program": { "@id": "program", "@type": "@id" },
+	  "platform": { "@id": "platform", "@type": "@id" },
+	  "deployment": { "@id": "deployment", "@type": "@id" },
+	  "retrieval": { "@id": "retrieval", "@type": "@id" },
+	  "log": { "@id": "log", "@type": "@id" },
+	  "data": { "@id": "data", "@type": "@id" },
+  
+	  "program_id": "program.id",
+	  "name": "name",
+	  "country": { "@id": "country", "@type": "@id" },
+	  "contact_contributions": "contact_contributions",
+	  "agency_contributions": "agency_contributions",
+  
+	  "platform_id": "platform.id",
+	  "ref": "ref",
+	  "serial_number": "serial_number",
+	  "internal_id": "internal_id",
+	  "model": { "@id": "model", "@type": "@id" },
+	  "networks": { "@id": "networks", "@type": "@id" },
+  
+	  "deployment_id": "deployment.id",
+	  "latitude": "latitude",
+	  "longitude": "longitude",
+	  "ship": { "@id": "ship", "@type": "@id" },
+	  "cruise": { "@id": "cruise", "@type": "@id" },
+  
+	  "retrieval_id": "retrieval.id",
+	  "ending_cause": { "@id": "ending_cause", "@type": "@id" },
+  
+	  "alerts": "alerts",
+	  "statuses": "statuses",
+	  "updates": "updates",
+	  "qc_flags": "qc_flags",
+  
+	  "observations": "observations",
+	  "observation_date": "observation_date",
+	  "variable": { "@id": "variable", "@type": "@id" },
+  
+	  "telecom": { "@id": "telecom", "@type": "@id" },
+	  "number": "number",
+	  "imei": "imei",
+	  "type": { "@id": "type", "@type": "@id" },
+  
+	  "contact": { "@id": "contact", "@type": "@id" },
+	  "first_name": "first_name",
+	  "last_name": "last_name",
+	  "email": "email",
+	  "agency": { "@id": "agency", "@type": "@id" },
+  
+	  "id": "@id",
+	  "identifier": "identifier",
+	  "status": { "@id": "status", "@type": "@id" },
+  
+	  "unit": { "@id": "unit", "@type": "@id" },
+	  "range_min": "range_min",
+	  "range_max": "range_max",
+	  "precision": "precision",
+	  "accuracy": "accuracy",
+	  "uncertainty": "uncertainty",
+  
+	  "created_at": { "@id": "created_at", "@type": "xsd:dateTime" },
+	  "updated_at": { "@id": "updated_at", "@type": "xsd:dateTime" }
+	}
+  }
+  

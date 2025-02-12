@@ -1,0 +1,38 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/configuration.schema.json",
+	"title": "Configuration",
+	"description": "Defines the operational configuration parameters for an oceanographic platform, including timing cycles and pressure settings.",
+	"type": "object",
+	"oceanMetaCode": "CFG",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the configuration record.",
+		"oceanMetaCode": "CFG-01"
+	  },
+	  "cycle_time": {
+		"type": "number",
+		"description": "The time interval (in hours) between consecutive operational cycles of the platform.",
+		"oceanMetaCode": "CFG-02"
+	  },
+	  "surface_time": {
+		"type": "number",
+		"description": "The duration (in minutes) the platform remains at the surface during its operational cycle.",
+		"oceanMetaCode": "CFG-03"
+	  },
+	  "drift_pressure": {
+		"type": "number",
+		"description": "The pressure level (in dbar) at which the platform drifts between profiling or measurement activities.",
+		"oceanMetaCode": "CFG-04"
+	  },
+	  "profile_pressure": {
+		"type": "number",
+		"description": "The target pressure (in dbar) for the platform's profiling or measurement operations.",
+		"oceanMetaCode": "CFG-05"
+	  }
+	},
+	"required": ["id"],
+	"additionalProperties": false
+  }
+  

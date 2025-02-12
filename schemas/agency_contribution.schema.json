@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/agency_contribution.schema.json",
+	"title": "Agency Contribution",
+	"description": "The combination of an agency and its role in a program or towards a specific platform/mission.",
+	"type": "object",
+	"oceanMetaCode": "ACT",
+	"properties": {
+	  "agency": {
+		"$ref": "https://github.com/OceanOPS/oceanjson/schemas/agency.schema.json",
+		"description": "The agency contributing to the program, platform, or mission.",
+		"oceanMetaCode": "ACT-01"
+	  },
+	  "role": {
+		"$ref": "https://github.com/OceanOPS/oceanjson/schemas/agency_role.schema.json",
+		"description": "The role of the agency in the program or mission (e.g., Coordinator, Data Provider, Funders).",
+		"oceanMetaCode": "ACT-02"
+	  }
+	},
+	"required": ["agency", "role"],
+	"additionalProperties": false
+  }
+  

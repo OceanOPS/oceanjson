@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/battery.schema.json",
+	"title": "Battery",
+	"description": "Defines the battery specifications used in ocean observing platforms.",
+	"type": "object",
+	"oceanMetaCode": "BAT",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the battery.",
+		"oceanMetaCode": "BAT-01"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The name or model of the battery.",
+		"oceanMetaCode": "BAT-02"
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

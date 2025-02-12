@@ -1,0 +1,33 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/software.schema.json",
+	"title": "Software",
+	"description": "Defines software installed on ocean observing platforms, including control systems, firmware, and data processing applications.",
+	"type": "object",
+	"oceanMetaCode": "SOF",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the software instance.",
+		"oceanMetaCode": "SOF-01"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The name of the software.",
+		"oceanMetaCode": "SOF-02"
+	  },
+	  "version": {
+		"type": "string",
+		"description": "The version of the software (e.g., 1.0.3).",
+		"oceanMetaCode": "SOF-03"
+	  },
+	  "type": {
+		"$ref": "https://github.com/OceanOPS/oceanjson/schemas/software_type.schema.json",
+		"description": "Reference to the software type (e.g., Firmware, Data Processing Software).",
+		"oceanMetaCode": "SOF-04"
+	  }
+	},
+	"required": ["id", "name", "version", "type"],
+	"additionalProperties": false
+  }
+  

@@ -1,0 +1,19 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://oceanjson.org/schemas/line.schema.json",
+	"title": "LINE",
+	"description": "A schema representing a line entity.",
+	"type": "object",
+	"oceanMetaCode": "LIN",
+	"properties": {
+	  "name": {
+		"type": "string",
+		"description": "Name of the line.",
+		"oceanMetaCode": "LIN-01",
+		"oceanMetaType": "string"
+	  }
+	},
+	"required": ["name"],
+	"additionalProperties": false
+  }
+  

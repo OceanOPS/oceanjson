@@ -1,0 +1,61 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/telecom.schema.json",
+	"title": "Telecom",
+	"description": "Setup of a telecommunications system onboard a platform.",
+	"type": "object",
+	"oceanMetaCode": "TEL",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "Unique identifier for the telecom setup.",
+		"oceanMetaCode": "TEL-01",
+		"oceanMetaType": ""
+	  },
+	  "number": {
+		"type": "string",
+		"description": "Telecommunication number associated with the platform.",
+		"oceanMetaCode": "TEL-02",
+		"oceanMetaType": ""
+	  },
+	  "imei": {
+		"type": "string",
+		"description": "International Mobile Equipment Identity (IMEI) number for tracking telecom devices.",
+		"oceanMetaCode": "TEL-03",
+		"oceanMetaType": ""
+	  },
+	  "type": {
+		"$ref": "telecom_type.schema.json",
+		"description": "Type of telecom connection (e.g., satellite, cellular).",
+		"oceanMetaCode": "TEL-04",
+		"oceanMetaType": "TTY"
+	  },
+	  "service": {
+		"$ref": "telecom_service.schema.json",
+		"description": "Telecommunication service provider or service type.",
+		"oceanMetaCode": "TEL-05",
+		"oceanMetaType": "TSV"
+	  },
+	  "format": {
+		"$ref": "telecom_format.schema.json",
+		"description": "Data format used for telecom communication.",
+		"oceanMetaCode": "TEL-06",
+		"oceanMetaType": "TFM"
+	  },
+	  "tracking_system": {
+		"$ref": "tracking_system.schema.json",
+		"description": "Tracking system used for telecom data transmission.",
+		"oceanMetaCode": "TEL-07",
+		"oceanMetaType": "TRS"
+	  },
+	  "latency": {
+		"$ref": "latency.schema.json",
+		"description": "Latency of the telecom system, representing delay in data transmission.",
+		"oceanMetaCode": "TEL-08",
+		"oceanMetaType": "LAY"
+	  }
+	},
+	"required": ["id", "type", "service"],
+	"additionalProperties": false
+  }
+  

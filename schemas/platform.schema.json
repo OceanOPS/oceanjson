@@ -1,0 +1,121 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/platform.schema.json",
+	"title": "Platform",
+	"description": "The physical system (e.g., float, buoy, tagged animal, station, mooring).",
+	"type": "object",
+	"oceanMetaCode": "PLA",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "Unique identifier for the platform.",
+		"oceanMetaCode": "PLA-01",
+		"oceanMetaType": "string"
+	  },
+	  "ref": {
+		"type": "string",
+		"description": "Reference code for the platform.",
+		"oceanMetaCode": "PLA-02",
+		"oceanMetaType": "string"
+	  },
+	  "serial_number": {
+		"type": "string",
+		"description": "The serial number of the platform.",
+		"oceanMetaCode": "PLA-03",
+		"oceanMetaType": "string"
+	  },
+	  "internal_id": {
+		"type": "string",
+		"description": "The local identifier allocated by the program/institute which deploys and maintains the platform.",
+		"oceanMetaCode": "PLA-04",
+		"oceanMetaType": "string"
+	  },
+	  "model": {
+		"$ref": "platform_model.schema.json",
+		"description": "The model of the platform.",
+		"oceanMetaCode": "PLA-05",
+		"oceanMetaType": "PLM"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "Name or nickname of the platform, can contain information about the deployment (e.g., the site for OceanSITES).",
+		"oceanMetaCode": "PLA-06",
+		"oceanMetaType": "string"
+	  },
+	  "description": {
+		"type": "string",
+		"description": "Detailed description of the platform.",
+		"oceanMetaCode": "PLA-07",
+		"oceanMetaType": "string"
+	  },
+	  "networks": {
+		"type": "array",
+		"items": {
+		  "$ref": "network.schema.json"
+		},
+		"description": "List of networks associated with the platform.",
+		"oceanMetaCode": "PLA-08",
+		"oceanMetaType": "NET[]"
+	  },
+	  "gts_allocations": {
+		"type": "array",
+		"items": {
+		  "$ref": "gts_allocation.schema.json"
+		},
+		"description": "GTS allocations for the platform.",
+		"oceanMetaCode": "PLA-09",
+		"oceanMetaType": "GTS[]"
+	  },
+	  "contact_contributions": {
+		"type": "array",
+		"items": {
+		  "$ref": "contact_contribution.schema.json"
+		},
+		"description": "List of contacts contributing to the platform.",
+		"oceanMetaCode": "PLA-10",
+		"oceanMetaType": "CCT[]"
+	  },
+	  "agency_contributions": {
+		"type": "array",
+		"items": {
+		  "$ref": "agency_contribution.schema.json"
+		},
+		"description": "List of agencies contributing to the platform.",
+		"oceanMetaCode": "PLA-11",
+		"oceanMetaType": "ACT[]"
+	  },
+	  "hardware": {
+		"$ref": "hardware.schema.json",
+		"description": "Hardware details of the platform.",
+		"oceanMetaCode": "PLA-12",
+		"oceanMetaType": "HAR"
+	  },
+	  "software": {
+		"$ref": "software.schema.json",
+		"description": "Software details of the platform.",
+		"oceanMetaCode": "PLA-13",
+		"oceanMetaType": "SOF"
+	  },
+	  "configuration": {
+		"$ref": "configuration.schema.json",
+		"description": "Configuration details of the platform.",
+		"oceanMetaCode": "PLA-14",
+		"oceanMetaType": "CFG"
+	  },
+	  "telecom": {
+		"$ref": "telecom.schema.json",
+		"description": "Primary telecom details of the platform.",
+		"oceanMetaCode": "PLA-15",
+		"oceanMetaType": "TEL"
+	  },
+	  "backup_telecom": {
+		"$ref": "telecom.schema.json",
+		"description": "Backup telecom details of the platform.",
+		"oceanMetaCode": "PLA-16",
+		"oceanMetaType": "TEL"
+	  }
+	},
+	"required": ["id", "ref", "model", "name"],
+	"additionalProperties": false
+  }
+  

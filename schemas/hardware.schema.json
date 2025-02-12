@@ -1,0 +1,74 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/hardware.schema.json",
+	"title": "Hardware",
+	"description": "Hardware details of a platform, including battery, control board, and firmware information.",
+	"type": "object",
+	"oceanMetaCode": "HAR",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "Unique identifier for the hardware.",
+		"oceanMetaCode": "HAR-01",
+		"oceanMetaType": ""
+	  },
+	  "battery": {
+		"$ref": "battery.schema.json",
+		"description": "Reference to the battery installed in the hardware.",
+		"oceanMetaCode": "HAR-02",
+		"oceanMetaType": "BAT"
+	  },
+	  "battery_pack": {
+		"type": "string",
+		"description": "Details of the battery pack used in the hardware.",
+		"oceanMetaCode": "HAR-03",
+		"oceanMetaType": ""
+	  },
+	  "manufacture_date": {
+		"type": "string",
+		"format": "date",
+		"description": "Date the hardware was manufactured.",
+		"oceanMetaCode": "HAR-04",
+		"oceanMetaType": ""
+	  },
+	  "special_feature": {
+		"type": "string",
+		"description": "Any special feature or unique capability of the hardware.",
+		"oceanMetaCode": "HAR-05",
+		"oceanMetaType": ""
+	  },
+	  "bluetooth_id": {
+		"type": "string",
+		"description": "Bluetooth identifier for the hardware.",
+		"oceanMetaCode": "HAR-06",
+		"oceanMetaType": ""
+	  },
+	  "batch_ref": {
+		"type": "string",
+		"description": "Reference number for the hardware batch.",
+		"oceanMetaCode": "HAR-07",
+		"oceanMetaType": ""
+	  },
+	  "control_board_type": {
+		"type": "string",
+		"description": "Type of the control board installed in the hardware.",
+		"oceanMetaCode": "HAR-08",
+		"oceanMetaType": ""
+	  },
+	  "control_board_serial_number": {
+		"type": "string",
+		"description": "Serial number of the control board.",
+		"oceanMetaCode": "HAR-09",
+		"oceanMetaType": ""
+	  },
+	  "firmware_version": {
+		"type": "string",
+		"description": "Version of the firmware installed on the hardware.",
+		"oceanMetaCode": "HAR-10",
+		"oceanMetaType": ""
+	  }
+	},
+	"required": ["id", "manufacture_date"],
+	"additionalProperties": false
+  }
+  

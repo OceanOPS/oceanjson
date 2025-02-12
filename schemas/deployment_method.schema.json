@@ -1,0 +1,25 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/deployment_method.schema.json",
+	"title": "Deployment Method",
+	"description": "Defines the method used to deploy the platform, including its name and detailed description.",
+	"type": "object",
+	"oceanMetaCode": "DMT",
+	"properties": {
+	  "name": {
+		"type": "string",
+		"description": "The name of the deployment method (e.g., 'Free Fall', 'Crane Launch', 'Aerial Drop').",
+		"oceanMetaCode": "DMT-01",
+		"oceanMetaType": ""
+	  },
+	  "description": {
+		"type": "string",
+		"description": "A detailed description of the deployment method, outlining specific procedures or techniques used.",
+		"oceanMetaCode": "DMT-02",
+		"oceanMetaType": ""
+	  }
+	},
+	"required": ["name"],
+	"additionalProperties": false
+  }
+  

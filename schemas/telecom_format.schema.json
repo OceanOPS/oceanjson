@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/telecom_format.schema.json",
+	"title": "Telecom Format",
+	"description": "Defines the format used for telecommunications in data transmission systems onboard oceanographic platforms.",
+	"type": "object",
+	"oceanMetaCode": "TFM",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the telecom format.",
+		"oceanMetaCode": "TFM-01"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The name of the telecom format (e.g., Binary, ASCII, JSON).",
+		"oceanMetaCode": "TFM-02"
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

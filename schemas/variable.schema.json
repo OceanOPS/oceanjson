@@ -1,0 +1,25 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/variable.schema.json",
+	"title": "Variable",
+	"description": "Represents a measurable parameter observed by sensors on a platform.",
+	"type": "object",
+	"oceanMetaCode": "VAR",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "The unique identifier of the variable.",
+		"oceanMetaCode": "VAR-01",
+		"oceanMetaType": ""
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The name of the variable (e.g., temperature, salinity).",
+		"oceanMetaCode": "VAR-02",
+		"oceanMetaType": ""
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

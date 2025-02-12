@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/software_type.schema.json",
+	"title": "Software Type",
+	"description": "Defines the type of software used in ocean observing platforms and related systems.",
+	"type": "object",
+	"oceanMetaCode": "SWT",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the software type.",
+		"oceanMetaCode": "SWT-01"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The name of the software type (e.g., Data Processing Software, Control System, Firmware).",
+		"oceanMetaCode": "SWT-02"
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

@@ -1,0 +1,18 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/platform_type.schema.json",
+	"title": "Platform Type",
+	"description": "Defines the type of platform used for oceanographic data collection (e.g., Buoy, Glider, Float, Mooring, Ship-based Station).",
+	"type": "object",
+	"oceanMetaCode": "PLT",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the platform type.",
+		"oceanMetaCode": "PLT-01"
+	  }
+	},
+	"required": ["id"],
+	"additionalProperties": false
+  }
+  

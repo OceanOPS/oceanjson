@@ -1,0 +1,32 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/contact.schema.json",
+	"title": "Contact",
+	"description": "Represents an individual associated with a mission, program, or agency, including their personal contact information.",
+	"type": "object",
+	"oceanMetaCode": "CON",
+	"properties": {
+	  "first_name": {
+		"type": "string",
+		"description": "The first name of the contact person.",
+		"oceanMetaCode": "CON-01",
+		"oceanMetaType": ""
+	  },
+	  "last_name": {
+		"type": "string",
+		"description": "The last name (surname) of the contact person.",
+		"oceanMetaCode": "CON-02",
+		"oceanMetaType": ""
+	  },
+	  "email": {
+		"type": "string",
+		"format": "email",
+		"description": "The email address of the contact person, used for communication.",
+		"oceanMetaCode": "CON-03",
+		"oceanMetaType": ""
+	  }
+	},
+	"required": ["first_name", "last_name"],
+	"additionalProperties": false
+  }
+  

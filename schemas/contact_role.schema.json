@@ -1,0 +1,18 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/contact_role.schema.json",
+	"title": "Contact Role",
+	"description": "The way a contact is contributing.",
+	"type": "object",
+	"oceanMetaCode": "CRL",
+	"properties": {
+	  "name": {
+		"type": "string",
+		"description": "The name of the role describing how the contact is contributing (e.g., Principal Investigator, Data Manager, Technical Support).",
+		"oceanMetaCode": "CRL-01"
+	  }
+	},
+	"required": ["name"],
+	"additionalProperties": false
+  }
+  

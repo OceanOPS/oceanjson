@@ -35,6 +35,8 @@ https://www.ocean-ops.org/api/data/oceanjson/platforms?fields=ref,status
 
 Property keys will all be based on the OceanMeta names that should all be identified with their respective code and definition.
 
+The MCD JSON file used to create the Ontology and Dictionary pages in OceanMeta website is here: /docs/oceanmeta-mcd.json
+
 ## OceanJSON Validator
 
 There will be an online tool where you can test that you JSON is valid OceanJSON.

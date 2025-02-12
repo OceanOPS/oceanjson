@@ -1,0 +1,33 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/gts_allocation.schema.json",
+	"title": "GTS Allocation",
+	"description": "Allocation of a GTS (Global Telecommunication System) identifier for a specific period, used for tracking data transmissions.",
+	"type": "object",
+	"oceanMetaCode": "GTS",
+	"properties": {
+	  "identifier": {
+		"type": "string",
+		"description": "The identifier used to tag data sent on the Global Telecommunication System (GTS). This code is mandatory for GTS tracking within a specific time window.",
+		"oceanMetaCode": "GTS-01",
+		"oceanMetaType": ""
+	  },
+	  "start_date": {
+		"type": "string",
+		"format": "date",
+		"description": "The date when the GTS identifier allocation starts.",
+		"oceanMetaCode": "GTS-02",
+		"oceanMetaType": ""
+	  },
+	  "end_date": {
+		"type": "string",
+		"format": "date",
+		"description": "The date when the GTS identifier allocation ends.",
+		"oceanMetaCode": "GTS-03",
+		"oceanMetaType": ""
+	  }
+	},
+	"required": ["identifier", "start_date"],
+	"additionalProperties": false
+  }
+  

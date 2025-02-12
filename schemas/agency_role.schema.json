@@ -1,0 +1,18 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/agency_role.schema.json",
+	"title": "Agency Role",
+	"description": "The way an agency is contributing.",
+	"type": "object",
+	"oceanMetaCode": "ARL",
+	"properties": {
+	  "name": {
+		"type": "string",
+		"description": "The role of the agency in a program, platform, or mission (e.g., Coordinator, Operator, Funder).",
+		"oceanMetaCode": "ARL-01"
+	  }
+	},
+	"required": ["name"],
+	"additionalProperties": false
+  }
+  

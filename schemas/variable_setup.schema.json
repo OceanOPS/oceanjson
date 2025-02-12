@@ -1,0 +1,167 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/variable_setup.schema.json",
+	"title": "Variable Setup",
+	"description": "The setup and configuration of a sensor to measure a specific variable.",
+	"type": "object",
+	"oceanMetaCode": "VSP",
+	"properties": {
+	  "sensor": {
+		"$ref": "sensor.schema.json",
+		"description": "Reference to the sensor used for the variable measurement.",
+		"oceanMetaCode": "VSP-01",
+		"oceanMetaType": "SEN"
+	  },
+	  "activated_variable": {
+		"$ref": "variable.schema.json",
+		"description": "The variable that the sensor is configured to measure.",
+		"oceanMetaCode": "VSP-02",
+		"oceanMetaType": "VAR"
+	  },
+	  "activation_date": {
+		"type": "string",
+		"format": "date",
+		"description": "Date when the sensor started measuring the variable.",
+		"oceanMetaCode": "VSP-03",
+		"oceanMetaType": ""
+	  },
+	  "deactivation_date": {
+		"type": "string",
+		"format": "date",
+		"description": "Date when the sensor stopped measuring the variable.",
+		"oceanMetaCode": "VSP-04",
+		"oceanMetaType": ""
+	  },
+	  "range_min": {
+		"type": "number",
+		"description": "Minimum value of the sensor's range.",
+		"oceanMetaCode": "VSP-05",
+		"oceanMetaType": ""
+	  },
+	  "range_max": {
+		"type": "number",
+		"description": "Maximum value of the sensor's range.",
+		"oceanMetaCode": "VSP-06",
+		"oceanMetaType": ""
+	  },
+	  "resolution": {
+		"type": "number",
+		"description": "Sensor resolution.",
+		"oceanMetaCode": "VSP-07",
+		"oceanMetaType": ""
+	  },
+	  "accuracy": {
+		"type": "number",
+		"description": "Sensor accuracy.",
+		"oceanMetaCode": "VSP-08",
+		"oceanMetaType": ""
+	  },
+	  "precision": {
+		"type": "number",
+		"description": "Sensor precision.",
+		"oceanMetaCode": "VSP-09",
+		"oceanMetaType": ""
+	  },
+	  "uncertainty": {
+		"type": "number",
+		"description": "Sensor uncertainty.",
+		"oceanMetaCode": "VSP-10",
+		"oceanMetaType": ""
+	  },
+	  "unit": {
+		"$ref": "unit.schema.json",
+		"description": "Measurement unit for the variable.",
+		"oceanMetaCode": "VSP-11",
+		"oceanMetaType": "SUN"
+	  },
+	  "height_from_sea": {
+		"type": "number",
+		"description": "Height or depth of the sensor from sea level. Positive for height, negative for depth.",
+		"oceanMetaCode": "VSP-12",
+		"oceanMetaType": ""
+	  },
+	  "height_from_deck": {
+		"type": "number",
+		"description": "Height of the sensor from the deck of the platform.",
+		"oceanMetaCode": "VSP-13",
+		"oceanMetaType": ""
+	  },
+	  "calibration_date": {
+		"type": "string",
+		"format": "date",
+		"description": "The last calibration date of the sensor.",
+		"oceanMetaCode": "VSP-14",
+		"oceanMetaType": ""
+	  },
+	  "next_calibration_date": {
+		"type": "string",
+		"format": "date",
+		"description": "The next scheduled calibration date of the sensor.",
+		"oceanMetaCode": "VSP-15",
+		"oceanMetaType": ""
+	  },
+	  "location": {
+		"$ref": "sensor_location.schema.json",
+		"description": "Reference to the location of the sensor.",
+		"oceanMetaCode": "VSP-16",
+		"oceanMetaType": "SLC"
+	  },
+	  "exposure": {
+		"$ref": "exposure.schema.json",
+		"description": "Reference to the exposure conditions of the sensor.",
+		"oceanMetaCode": "VSP-17",
+		"oceanMetaType": "EXP"
+	  },
+	  "operating_status": {
+		"$ref": "status.schema.json",
+		"description": "Current operational status of the sensor (e.g., operational, testing).",
+		"oceanMetaCode": "VSP-18",
+		"oceanMetaType": "SSS"
+	  },
+	  "data_processing_method": {
+		"$ref": "data_processing_method.schema.json",
+		"description": "Reference to the data processing method applied to the measurements.",
+		"oceanMetaCode": "VSP-19",
+		"oceanMetaType": "DPM"
+	  },
+	  "sampling_period": {
+		"type": "number",
+		"description": "Time interval between consecutive samples, in seconds.",
+		"oceanMetaCode": "VSP-20",
+		"oceanMetaType": ""
+	  },
+	  "total_sampling_period": {
+		"type": "number",
+		"description": "Total duration of the sampling period in seconds.",
+		"oceanMetaCode": "VSP-21",
+		"oceanMetaType": ""
+	  },
+	  "distance_bow": {
+		"type": "number",
+		"description": "Distance of the sensor from the bow of the platform, in meters.",
+		"oceanMetaCode": "VSP-22",
+		"oceanMetaType": ""
+	  },
+	  "distance_center": {
+		"type": "number",
+		"description": "Distance of the sensor from the platform's centerline, in meters.",
+		"oceanMetaCode": "VSP-23",
+		"oceanMetaType": ""
+	  },
+	  "side_indicator": {
+		"type": "string",
+		"description": "Indicates the side of the platform where the sensor is installed (e.g., port, starboard).",
+		"oceanMetaCode": "VSP-24",
+		"oceanMetaType": ""
+	  },
+	  "comments": {
+		"type": "string",
+		"description": "Additional notes or comments regarding the variable setup.",
+		"oceanMetaCode": "VSP-25",
+		"oceanMetaType": ""
+	  }
+	},
+	"required": ["sensor", "activated_variable", "unit"],
+	"additionalProperties": false
+  }
+  

@@ -1,0 +1,49 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/program.schema.json",
+	"title": "Program",
+	"description": "Structured collaboration group of independent entities with distinct roles.",
+	"type": "object",
+	"oceanMetaCode": "PRO",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "Unique identifier for the program.",
+		"oceanMetaCode": "PRO-01",
+		"oceanMetaType": "string"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "Official name of the program.",
+		"oceanMetaCode": "PRO-02",
+		"oceanMetaType": "string"
+	  },
+	  "country": {
+		"$ref": "country.schema.json",
+		"description": "Country associated with the program.",
+		"oceanMetaCode": "PRO-03",
+		"oceanMetaType": "COU"
+	  },
+	  "contact_contributions": {
+		"type": "array",
+		"items": {
+		  "$ref": "contact_contribution.schema.json"
+		},
+		"description": "List of contacts contributing to the program.",
+		"oceanMetaCode": "PRO-04",
+		"oceanMetaType": "CRL[]"
+	  },
+	  "agency_contributions": {
+		"type": "array",
+		"items": {
+		  "$ref": "agency_contribution.schema.json"
+		},
+		"description": "List of agencies contributing to the program.",
+		"oceanMetaCode": "PRO-05",
+		"oceanMetaType": "ACT[]"
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

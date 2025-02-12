@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/telecom_type.schema.json",
+	"title": "Telecom Type",
+	"description": "Defines the types of telecommunications systems used for data transmission in oceanographic platforms.",
+	"type": "object",
+	"oceanMetaCode": "TTY",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the telecom type.",
+		"oceanMetaCode": "TTY-01"
+	  },
+	  "name": {
+		"type": "string",
+		"description": "The name of the telecom type (e.g., Satellite, Cellular, Radio, Acoustic).",
+		"oceanMetaCode": "TTY-02"
+	  }
+	},
+	"required": ["id", "name"],
+	"additionalProperties": false
+  }
+  

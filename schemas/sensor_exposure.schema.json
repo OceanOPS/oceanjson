@@ -1,0 +1,28 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/sensor_exposure.schema.json",
+	"title": "Sensor Exposure",
+	"description": "Defines the exposure details of a sensor installed on an oceanographic platform, indicating how the sensor interacts with its surrounding environment.",
+	"type": "object",
+	"oceanMetaCode": "EXP",
+	"properties": {
+	  "id": {
+		"type": "string",
+		"description": "A unique identifier for the sensor exposure configuration.",
+		"oceanMetaCode": "EXP-01"
+	  },
+	  "ref": {
+		"type": "string",
+		"description": "A reference code representing the type of exposure (e.g., sheltered, open-air, submerged).",
+		"oceanMetaCode": "EXP-02"
+	  },
+	  "pub47_ref": {
+		"type": "string",
+		"description": "Reference to WMO Publication No. 47 (Pub47) if the sensor exposure is registered there, for international standardization.",
+		"oceanMetaCode": "EXP-03"
+	  }
+	},
+	"required": ["id"],
+	"additionalProperties": false
+  }
+  
