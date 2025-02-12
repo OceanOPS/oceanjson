@@ -217,22 +217,4 @@ The current version is `0.0.1` and is still a draft and has not been officially 
 
 We are in the process of defining the Key Categories.
 
-The platform entities form the central node of the schema.
-
-### A platform has 7 key blocks of metadata:
-
-1. **Identification**  
-   Key identifiers
-2. **Operations**  
-   Deployment, retrieval and maintenance logistics
-3. **Hardware**  
-   Instrumentation, tech configuration, and sensors
-4. **Status**  
-   Performance, operational status, notifications, spatio-temporal data
-5. **Affiliations**  
-   Programs, networks, agencies, sites, ships, cruises, contacts, etc.
-6. **Data**  
-   Metadata related to observations from each GDAC
-7. **Updates**  
-   Changes to metadata: field changed, when, by who, and how
-
+The mission entities form the central node of the schema.

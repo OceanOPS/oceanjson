@@ -1,0 +1,1763 @@
+{
+	"classes": [
+		{
+		  "id": "MIS",
+		  "label": "MISSION",
+		  "definition": "Operational period of a platform for data collection and transmission aligned with GOOS objectives.",
+		  "fields": [
+			{
+			  "code": "MIS-01",
+			  "title": "wigos_id",
+			  "type": ""
+			},
+			{
+			  "code": "MIS-02",
+			  "title": "program",
+			  "type": "PRO"
+			},
+			{
+			  "code": "MIS-03",
+			  "title": "platform",
+			  "type": "PLA"
+			},
+			{
+			  "code": "MIS-04",
+			  "title": "deployment",
+			  "type": "DEP"
+			},
+			{
+			  "code": "MIS-05",
+			  "title": "variable_setups",
+			  "type": "VSP[ ]"
+			},
+			{
+			  "code": "MIS-06",
+			  "title": "log",
+			  "type": "LOG"
+			},
+			{
+			  "code": "MIS-07",
+			  "title": "data",
+			  "type": "DAT"
+			},
+			{
+			  "code": "MIS-08",
+			  "title": "retrieval",
+			  "type": "RET"
+			},
+			{
+			  "code": "MIS-09",
+			  "title": "passport_delivery_date",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "PRO",
+		  "label": "PROGRAM",
+		  "definition": "Structured collaboration group of independant entities with distinct roles.",
+		  "fields": [
+			{
+			  "code": "PRO-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "PRO-02",
+			  "title": "name",
+			  "type": ""
+			},
+			{
+			  "code": "PRO-03",
+			  "title": "country",
+			  "type": "COU"
+			},
+			{
+			  "code": "PRO-04",
+			  "title": "contact_contributions",
+			  "type": "CRL[ ]"
+			},
+			{
+			  "code": "PRO-05",
+			  "title": "agency_contributions",
+			  "type": "ACT[ ]"
+			}
+		  ]
+		},
+		{
+		  "id": "COU",
+		  "label": "COUNTRY",
+		  "definition": "United Nations member state or a group of states such as European Union.",
+		  "fields": [
+			{
+			  "code": "COU-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "COU-02",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "PLA",
+		  "label": "PLATFORM",
+		  "definition": "The physical system (e.g., float, buoy, tagged animal, station, mooring).",
+		  "fields": [
+			{
+			  "code": "PLA-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "PLA-02",
+			  "title": "ref",
+			  "type": ""
+			},
+			{
+			  "code": "PLA-03",
+			  "title": "serial_number",
+			  "definition": "The serial number of the platform.",
+			  "type": ""
+			},
+			{
+			  "code": "PLA-04",
+			  "title": "internal_id",
+			  "definition": "The local identifier allocated by the program/institute which deploys and maintains the platform.",
+			  "type": ""
+			},
+			{
+			  "code": "PLA-05",
+			  "title": "model",
+			  "type": "PLM"
+			},
+			{
+			  "code": "PLA-06",
+			  "title": "name",
+			  "definition": "Name or nickname of the platform, can contain information about the deployment (e.g. the site for OceanSITES, ...).",
+			  "type": ""
+			},
+			{
+			  "code": "PLA-07",
+			  "title": "description",
+			  "type": ""
+			},
+			{
+			  "code": "PLA-08",
+			  "title": "networks",
+			  "type": "NET[ ]"
+			},
+			{
+			  "code": "PLA-09",
+			  "title": "gts_allocations",
+			  "type": "GTS[ ]"
+			},
+			{
+			  "code": "PLA-10",
+			  "title": "contact_contributions",
+			  "type": "CCT[ ]"
+			},
+			{
+			  "code": "PLA-11",
+			  "title": "agency_contributions",
+			  "type": "ACT[ ]"
+			},
+			{
+			  "code": "PLA-12",
+			  "title": "hardware",
+			  "type": "HAR"
+			},
+			{
+			  "code": "PLA-13",
+			  "title": "software",
+			  "type": "SOF"
+			},
+			{
+			  "code": "PLA-14",
+			  "title": "configuration",
+			  "type": "CFG"
+			},
+			{
+			  "code": "PLA-15",
+			  "title": "telecom",
+			  "type": "TEL"
+			},
+			{
+			  "code": "PLA-16",
+			  "title": "backup_telecom",
+			  "type": "TEL"
+			}
+		  ]
+		},
+		{
+		  "id": "DEP",
+		  "label": "DEPLOYMENT",
+		  "definition": "The initial operation of a mission - when the platform is activated.",
+		  "fields": [
+			{
+			  "code": "DEP-01",
+			  "title": "start_date",
+			  "definition": "Date the mission starts, date from which the platform is ready to operate (Launch/Activation).",
+			  "type": ""
+			},
+			{
+			  "code": "DEP-02",
+			  "title": "latitude",
+			  "definition": "Latitude of platform deployment in decimal WGS84 (4326).",
+			  "type": ""
+			},
+			{
+			  "code": "DEP-03",
+			  "title": "longitude",
+			  "definition": "Longitude of platform deployment in decimal WGS84 (4326).",
+			  "type": ""
+			},
+			{
+			  "code": "DEP-04",
+			  "title": "ship",
+			  "type": "SHP"
+			},
+			{
+			  "code": "DEP-05",
+			  "title": "cruise",
+			  "type": "CRU"
+			},
+			{
+			  "code": "DEP-06",
+			  "title": "max_water_depth",
+			  "definition": "The water depth in meters at the mooring position.",
+			  "type": ""
+			},
+			{
+			  "code": "DEP-07",
+			  "title": "platform_altitude",
+			  "definition": "Elevation, in metres, of the deployed element above the sea level.",
+			  "type": ""
+			},
+			{
+			  "code": "DEP-08",
+			  "title": "method",
+			  "type": "DMT"
+			},
+			{
+			  "code": "DEP-09",
+			  "title": "country",
+			  "type": "COU"
+			},
+			{
+			  "code": "DEP-10",
+			  "title": "sites",
+			  "type": "SIT[ ]"
+			}
+		  ]
+		},
+		{
+		  "id": "CRU",
+		  "label": "CRUISE",
+		  "definition": "Operational period of a ship.",
+		  "fields": [
+			{
+			  "code": "CRU-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "CRU-02",
+			  "title": "start_date",
+			  "type": ""
+			},
+			{
+			  "code": "CRU-03",
+			  "title": "end_date",
+			  "type": ""
+			},
+			{
+			  "code": "CRU-04",
+			  "title": "lines",
+			  "type": "LIN[ ]"
+			},
+			{
+			  "code": "CRU-05",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "LOG",
+		  "label": "LOG",
+		  "definition": "History and progress log of all events related to mission.",
+		  "fields": [
+			{
+			  "code": "LOG-01",
+			  "title": "alerts",
+			  "type": "ALR[ ]"
+			},
+			{
+			  "code": "LOG-02",
+			  "title": "statuses",
+			  "type": "STS[ ]"
+			},
+			{
+			  "code": "LOG-03",
+			  "title": "updates",
+			  "type": "UPD[ ]"
+			},
+			{
+			  "code": "LOG-04",
+			  "title": "qc_flags",
+			  "type": "QCF[ ]"
+			}
+		  ]
+		},
+		{
+		  "id": "NET",
+		  "label": "NETWORK",
+		  "fields": [
+			{
+			  "code": "NET-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "NET-02",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "LIN",
+		  "label": "LINE",
+		  "fields": [
+			{
+			  "code": "LIN-01",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "SEN",
+		  "label": "SENSOR",
+		  "definition": "The physical instrument installed on a platform.",
+		  "fields": [
+			{
+			  "code": "SEN-02",
+			  "title": "model",
+			  "type": "SEM"
+			},
+			{
+			  "code": "SEN-03",
+			  "title": "serial_number",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "VAR",
+		  "label": "VARIABLE",
+		  "fields": [
+			{
+			  "code": "VAR-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "VAR-02",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "SEM",
+		  "label": "SENSOR MODEL",
+		  "fields": [
+			{
+			  "code": "SEM-02",
+			  "title": "name",
+			  "type": ""
+			},
+			{
+			  "code": "SEM-03",
+			  "title": "manufacturer",
+			  "type": "MAN"
+			},
+			{
+			  "code": "SEM-04",
+			  "title": "supported_variables",
+			  "type": "VAR[ ]"
+			}
+		  ]
+		},
+		{
+		  "id": "ALR",
+		  "label": "ALERT",
+		  "fields": [
+			{
+			  "code": "ALR-01",
+			  "title": "id",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "UPD",
+		  "label": "UPDATE",
+		  "fields": [
+			{
+			  "code": "UPD-01",
+			  "title": "date",
+			  "type": ""
+			},
+			{
+			  "code": "UPD-02",
+			  "title": "field",
+			  "type": ""
+			},
+			{
+			  "code": "UPD-03",
+			  "title": "previous_value",
+			  "type": ""
+			},
+			{
+			  "code": "UPD-04",
+			  "title": "new_value",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "QCF",
+		  "label": "QC FLAG",
+		  "fields": [
+			{
+			  "code": "QCF-01",
+			  "title": "id",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "PLM",
+		  "label": "PLATFORM MODEL",
+		  "fields": [
+			{
+			  "code": "PTM-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "PTM-02",
+			  "title": "name",
+			  "type": ""
+			},
+			{
+			  "code": "PTM-03",
+			  "title": "type",
+			  "type": "PLT"
+			}
+		  ]
+		},
+		{
+		  "id": "PLT",
+		  "label": "PLATFORM TYPE",
+		  "fields": [
+			{
+			  "code": "PLT-01",
+			  "title": "id",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "TEL",
+		  "label": "TELECOM",
+		  "definition": "Setup of a telecommunications system onboard a platform.",
+		  "fields": [
+			{
+			  "code": "TEL-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "TEL-02",
+			  "title": "number",
+			  "type": ""
+			},
+			{
+			  "code": "TEL-03",
+			  "title": "imei",
+			  "type": ""
+			},
+			{
+			  "code": "TEL-04",
+			  "title": "type",
+			  "type": "TTY"
+			},
+			{
+			  "code": "TEL-05",
+			  "title": "service",
+			  "type": "TSV"
+			},
+			{
+			  "code": "TEL-06",
+			  "title": "format",
+			  "type": "TFM"
+			},
+			{
+			  "code": "TEL-07",
+			  "title": "tracking_system",
+			  "type": "TRS"
+			},
+			{
+			  "code": "TEL-08",
+			  "title": "latency",
+			  "type": "LAY"
+			}
+		  ]
+		},
+		{
+		  "id": "TTY",
+		  "label": "TELECOM TYPE",
+		  "fields": [
+			{
+			  "code": "TTY-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "TTY-02",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "TSV",
+		  "label": "TELECOM SERVICE",
+		  "fields": [
+			{
+			  "code": "TSV-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "TSV-02",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "TFM",
+		  "label": "TELECOM FORMAT",
+		  "fields": [
+			{
+			  "code": "TFM-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "TFM-02",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "RET",
+		  "label": "RETRIEVAL",
+		  "fields": [
+			{
+			  "code": "RET-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "RET-02",
+			  "title": "start_date",
+			  "type": ""
+			},
+			{
+			  "code": "RET-03",
+			  "title": "end_date",
+			  "type": ""
+			},
+			{
+			  "code": "RET-04",
+			  "title": "ship",
+			  "definition": "Ship that recovered the platform.",
+			  "type": "SHP"
+			},
+			{
+			  "code": "RET-05",
+			  "title": "latitude",
+			  "type": ""
+			},
+			{
+			  "code": "RET-06",
+			  "title": "longitude",
+			  "type": ""
+			},
+			{
+			  "code": "RET-07",
+			  "title": "comments",
+			  "type": ""
+			},
+			{
+			  "code": "RET-08",
+			  "title": "ending_cause",
+			  "definition": "Reason why the platform is considered as closed (e.g. recovered, lost).",
+			  "type": "ENC"
+			}
+		  ]
+		},
+		{
+		  "id": "VTY",
+		  "label": "SHIP TYPE",
+		  "fields": [
+			{
+			  "code": "VTY-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "VTY-02",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "SHP",
+		  "label": "SHIP",
+		  "fields": [
+			{
+			  "code": "SHP-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-02",
+			  "title": "name",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-03",
+			  "title": "ices",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-04",
+			  "title": "call_sign",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-05",
+			  "title": "mmsi",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-06",
+			  "title": "imo",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-07",
+			  "title": "type",
+			  "type": "VTY"
+			},
+			{
+			  "code": "SHP-08",
+			  "title": "flag_country",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-09",
+			  "title": "hide_metadata",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-10",
+			  "title": "length",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-11",
+			  "title": "breadth",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-12",
+			  "title": "freeboard",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-13",
+			  "title": "draft",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-14",
+			  "title": "cargo_height",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-15",
+			  "title": "bridge_bow",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-16",
+			  "title": "max_speed",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-17",
+			  "title": "shipping_company",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-18",
+			  "title": "comments",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-19",
+			  "title": "shore_contact_name",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-20",
+			  "title": "shore_contact_email",
+			  "type": ""
+			},
+			{
+			  "code": "SHP-21",
+			  "title": "sea_contact_email",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "TRS",
+		  "label": "TRACKING SYSTEM",
+		  "fields": [
+			{
+			  "code": "TRS-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "TRS-02",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "CFG",
+		  "label": "CONFIGURATION",
+		  "fields": [
+			{
+			  "code": "CFG-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "CFG-02",
+			  "title": "cycle_time",
+			  "type": ""
+			},
+			{
+			  "code": "CFG-03",
+			  "title": "surface_time",
+			  "type": ""
+			},
+			{
+			  "code": "CFG-04",
+			  "title": "drift_pressure",
+			  "type": ""
+			},
+			{
+			  "code": "CFG-05",
+			  "title": "profile_pressure",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "VSP",
+		  "label": "VARIABLE SETUP",
+		  "definition": "The setup and configuration of a sensor to measure a specific variable.",
+		  "fields": [
+			{
+			  "code": "VSP-01",
+			  "title": "sensor",
+			  "type": "SEN"
+			},
+			{
+			  "code": "VSP-02",
+			  "title": "activated_variable",
+			  "type": "VAR"
+			},
+			{
+			  "code": "VSP-03",
+			  "title": "activation_date",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-04",
+			  "title": "deactivation_date",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-05",
+			  "title": "range_min",
+			  "definition": "Minimum value of sensor range. The 'unit' field completes the information.",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-06",
+			  "title": "range_max",
+			  "definition": "Maximum value of sensor range. The 'unit' field completes the information.",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-07",
+			  "title": "resolution",
+			  "definition": "Sensor resolution. The 'unit' field completes the information.",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-08",
+			  "title": "accuracy",
+			  "definition": "Sensor accuracy. The 'unit' field completes the information.",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-09",
+			  "title": "precision",
+			  "definition": "Sensor precision. The 'unit' field completes the information.",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-10",
+			  "title": "uncertainty",
+			  "definition": "Sensor uncertainty. The 'unit' field completes the information.",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-11",
+			  "title": "unit",
+			  "type": "SUN"
+			},
+			{
+			  "code": "VSP-12",
+			  "title": "height_from_sea",
+			  "definition": "Height or depth of the installation of the sensor from sea level. Positive value for height, Negative value for depth.",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-13",
+			  "title": "height_from_deck",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-14",
+			  "title": "calibration_date",
+			  "definition": "The last calibration date of the sensor.",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-15",
+			  "title": "next_calibration_date",
+			  "definition": "The next due calibration date of the sensor.",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-16",
+			  "title": "location",
+			  "type": "SLC"
+			},
+			{
+			  "code": "VSP-17",
+			  "title": "exposure",
+			  "type": "EXP"
+			},
+			{
+			  "code": "VSP-18",
+			  "title": "operating_status",
+			  "definition": "Default to operational is observation grabbed for that variable. Should be specified is testing.",
+			  "type": "SSS"
+			},
+			{
+			  "code": "VSP-19",
+			  "title": "data_processing_method",
+			  "type": "DPM"
+			},
+			{
+			  "code": "VSP-20",
+			  "title": "sampling_period",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-21",
+			  "title": "total_sampling_period",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-22",
+			  "title": "distance_bow",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-23",
+			  "title": "distance_center",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-24",
+			  "title": "side_indicator",
+			  "type": ""
+			},
+			{
+			  "code": "VSP-25",
+			  "title": "comments",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "EXP",
+		  "label": "SENSOR EXPOSURE",
+		  "fields": [
+			{
+			  "code": "EXP-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "EXP-02",
+			  "title": "ref",
+			  "type": ""
+			},
+			{
+			  "code": "EXP-03",
+			  "title": "pub47_ref",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "SLC",
+		  "label": "SENSOR LOCATION",
+		  "fields": [
+			{
+			  "code": "SLC-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "SLC-02",
+			  "title": "ref",
+			  "type": ""
+			},
+			{
+			  "code": "SLC-03",
+			  "title": "pub47_ref",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "SSS",
+		  "label": "SENSOR STATUS",
+		  "fields": [
+			{
+			  "code": "SSS-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "SSS-02",
+			  "title": "ref",
+			  "type": ""
+			},
+			{
+			  "code": "SSS-03",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "DPM",
+		  "label": "DATA PROCESSING METHOD",
+		  "fields": [
+			{
+			  "code": "DPM-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "DPM-02",
+			  "title": "ref",
+			  "type": ""
+			},
+			{
+			  "code": "DPM-03",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "SUN",
+		  "label": "SENSOR UNIT",
+		  "fields": [
+			{
+			  "code": "SUN-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "SUN-02",
+			  "title": "wigos_code",
+			  "type": ""
+			},
+			{
+			  "code": "SUN-03",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "BAT",
+		  "label": "BATTERY",
+		  "fields": [
+			{
+			  "code": "BAT-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "BAT-02",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "HAR",
+		  "label": "HARDWARE",
+		  "fields": [
+			{
+			  "code": "HAR-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "HAR-02",
+			  "title": "battery",
+			  "type": "BAT"
+			},
+			{
+			  "code": "HAR-03",
+			  "title": "battery_pack",
+			  "type": ""
+			},
+			{
+			  "code": "HAR-04",
+			  "title": "manufacture_date",
+			  "type": ""
+			},
+			{
+			  "code": "HAR-05",
+			  "title": "special_feature",
+			  "type": ""
+			},
+			{
+			  "code": "HAR-06",
+			  "title": "bluetooth_id",
+			  "type": ""
+			},
+			{
+			  "code": "HAR-07",
+			  "title": "batch_ref",
+			  "type": ""
+			},
+			{
+			  "code": "HAR-08",
+			  "title": "control_board_type",
+			  "type": ""
+			},
+			{
+			  "code": "HAR-09",
+			  "title": "control_board_serial_number",
+			  "type": ""
+			},
+			{
+			  "code": "HAR-10",
+			  "title": "firmware_version",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "SOF",
+		  "label": "SOFTWARE",
+		  "fields": [
+			{
+			  "code": "SOF-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "SOF-02",
+			  "title": "name",
+			  "type": ""
+			},
+			{
+			  "code": "SOF-03",
+			  "title": "version",
+			  "type": ""
+			},
+			{
+			  "code": "SOF-04",
+			  "title": "type",
+			  "type": "SWT"
+			}
+		  ]
+		},
+		{
+		  "id": "SWT",
+		  "label": "SOFTWARE TYPE",
+		  "fields": [
+			{
+			  "code": "SWT-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "SWT-02",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "STS",
+		  "label": "STATUS",
+		  "fields": [
+			{
+			  "code": "STS-01",
+			  "title": "latest_mission_status",
+			  "type": "MST"
+			},
+			{
+			  "code": "STS-02",
+			  "title": "mission_status_history",
+			  "type": "MST[ ]"
+			},
+			{
+			  "code": "STS-03",
+			  "title": "activity_criterion",
+			  "type": ""
+			},
+			{
+			  "code": "STS-04",
+			  "title": "closure_criterion",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "MST",
+		  "label": "MISSION STATUS",
+		  "fields": [
+			{
+			  "code": "MST-01",
+			  "title": "start_date",
+			  "type": ""
+			},
+			{
+			  "code": "MST-02",
+			  "title": "end_date",
+			  "type": ""
+			},
+			{
+			  "code": "MST-03",
+			  "title": "type",
+			  "type": "STT"
+			}
+		  ]
+		},
+		{
+		  "id": "STT",
+		  "label": "STATUS TYPE",
+		  "definition": "Types of Mission Status ( eg. Inactive, Operational).",
+		  "fields": [
+			{
+			  "code": "STT-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "STT-02",
+			  "title": "name",
+			  "type": ""
+			},
+			{
+			  "code": "STT-03",
+			  "title": "rank",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "DMT",
+		  "label": "DEPLOYMENT METHOD",
+		  "definition": "The method used to deploy the platform.",
+		  "fields": [
+			{
+			  "code": "DMT-01",
+			  "title": "name",
+			  "type": ""
+			},
+			{
+			  "code": "DMT-02",
+			  "title": "description",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "CON",
+		  "label": "CONTACT",
+		  "fields": [
+			{
+			  "code": "CON-01",
+			  "title": "first_name",
+			  "type": ""
+			},
+			{
+			  "code": "CON-02",
+			  "title": "last_name",
+			  "type": ""
+			},
+			{
+			  "code": "CON-03",
+			  "title": "email",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "CRL",
+		  "label": "CONTACT ROLE",
+		  "definition": "The way a contact is contributing.",
+		  "fields": [
+			{
+			  "code": "CRL-01",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "CCT",
+		  "label": "CONTACT CONTRIBUTION",
+		  "definition": "The combination of a contact and their role in a program or towards a specific platform/mission.",
+		  "fields": [
+			{
+			  "code": "CCT-01",
+			  "title": "contact",
+			  "type": "CON"
+			},
+			{
+			  "code": "CCT-02",
+			  "title": "role",
+			  "type": "CRL"
+			}
+		  ]
+		},
+		{
+		  "id": "AGN",
+		  "label": "AGENCY",
+		  "definition": "An agency is an organization, a manufacturer, a data center, etc.",
+		  "fields": [
+			{
+			  "code": "AGN-01",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "ARL",
+		  "label": "AGENCY ROLE",
+		  "definition": "The way an agency is contributing.",
+		  "fields": [
+			{
+			  "code": "ARL-01",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "ACT",
+		  "label": "AGENCY CONTRIBUTION",
+		  "definition": "The combination of an agency and it's role in a program or towards a specific platform/mission.",
+		  "fields": [
+			{
+			  "code": "ACT-01",
+			  "title": "agency",
+			  "type": "AGN"
+			},
+			{
+			  "code": "ACT-02",
+			  "title": "role",
+			  "type": "ARL"
+			}
+		  ]
+		},
+		{
+		  "id": "ENC",
+		  "label": "ENDING CAUSE",
+		  "definition": "Reason why the platform is considered as closed (e.g. recovered, lost)",
+		  "fields": [
+			{
+			  "code": "ENC-01",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "SIT",
+		  "label": "SITE",
+		  "fields": [
+			{
+			  "code": "SIT-01",
+			  "title": "name",
+			  "type": ""
+			},
+			{
+			  "code": "SIT-02",
+			  "title": "wkt",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "MAN",
+		  "label": "MANUFACTURER",
+		  "fields": [
+			{
+			  "code": "MAN-01",
+			  "title": "name",
+			  "type": ""
+			},
+			{
+			  "code": "MAN-02",
+			  "title": "url",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "GTS",
+		  "label": "GTS ALLOCATION",
+		  "definition": "Allocation of a GTS identifier for a period of time.",
+		  "fields": [
+			{
+			  "code": "GTS-01",
+			  "title": "identifier",
+			  "definition": "The identifier used to tag data sent on the Global Telecommunication System. Code for a given time window. Mandatory for GTS tracking.",
+			  "type": ""
+			},
+			{
+			  "code": "GTS-02",
+			  "title": "start_date",
+			  "type": ""
+			},
+			{
+			  "code": "GTS-03",
+			  "title": "end_date",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "LAY",
+		  "label": "LATENCY",
+		  "fields": [
+			{
+			  "code": "LAY-01",
+			  "title": "ref",
+			  "type": ""
+			},
+			{
+			  "code": "LAY-02",
+			  "title": "name",
+			  "type": ""
+			}
+		  ]
+		},
+		{
+		  "id": "OBS",
+		  "label": "OBSERVATION",
+		  "definition": "A measurement event.",
+		  "fields": [
+			{
+			  "code": "OBS-01",
+			  "title": "id",
+			  "type": ""
+			},
+			{
+			  "code": "OBS-02",
+			  "title": "observation_date",
+			  "type": ""
+			},
+			{
+			  "code": "OBS-03",
+			  "title": "latitude",
+			  "type": ""
+			},
+			{
+			  "code": "OBS-04",
+			  "title": "longitude",
+			  "type": ""
+			},
+			{
+			  "code": "OBS-05",
+			  "title": "variable",
+			  "type": "VAR"
+			}
+		  ]
+		},
+		{
+		  "id": "DAT",
+		  "label": "DATA",
+		  "definition": "A mission's measurement activity properties.",
+		  "fields": [
+			{
+			  "code": "DAT-01",
+			  "title": "observations",
+			  "definition": "A mission's data measurement events.",
+			  "type": "OBS[ ]"
+			}
+		  ]
+		}
+	  ],
+	"relationships": [
+		{
+			"source": "MIS",
+			"target": "PRO",
+			"label": "program"
+		},
+		{
+			"source": "MIS",
+			"target": "PLA",
+			"label": "platform"
+		},
+		{
+			"source": "MIS",
+			"target": "DEP",
+			"label": "deployment"
+		},
+		{
+			"source": "MIS",
+			"target": "VSP",
+			"label": "variable_setups"
+		},
+		{
+			"source": "MIS",
+			"target": "LOG",
+			"label": "log"
+		},
+		{
+			"source": "MIS",
+			"target": "DAT",
+			"label": "data"
+		},
+		{
+			"source": "MIS",
+			"target": "RET",
+			"label": "retrieval"
+		},
+		{
+			"source": "PRO",
+			"target": "COU",
+			"label": "country"
+		},
+		{
+			"source": "PLA",
+			"target": "PLM",
+			"label": "model"
+		},
+		{
+			"source": "PLA",
+			"target": "NET",
+			"label": "networks"
+		},
+		{
+			"source": "PLA",
+			"target": "GTS",
+			"label": "gts_allocations"
+		},
+		{
+			"source": "PLA",
+			"target": "ACT",
+			"label": "agency_contributions"
+		},
+		{
+			"source": "PLA",
+			"target": "CFG",
+			"label": "configuration"
+		},
+		{
+			"source": "PLA",
+			"target": "SOF",
+			"label": "software"
+		},
+		{
+			"source": "SOF",
+			"target": "SWT",
+			"label": "type"
+		},
+		{
+			"source": "PLA",
+			"target": "HAR",
+			"label": "hardware"
+		},
+		{
+			"source": "HAR",
+			"target": "BAT",
+			"label": "battery"
+		},
+		{
+			"source": "PLM",
+			"target": "PLT",
+			"label": "type"
+		},
+		{
+			"source": "PLA",
+			"target": "CCT",
+			"label": "contact_contributions"
+		},
+		{
+			"source": "PRO",
+			"target": "ACT",
+			"label": "agency_contributions"
+		},
+		{
+			"source": "PRO",
+			"target": "CCT",
+			"label": "contact_contributions"
+		},
+		{
+			"source": "CCT",
+			"target": "CRL",
+			"label": "role"
+		},
+		{
+			"source": "CCT",
+			"target": "CON",
+			"label": "contact"
+		},
+		{
+			"source": "ACT",
+			"target": "ARL",
+			"label": "role"
+		},
+		{
+			"source": "ACT",
+			"target": "AGN",
+			"label": "agency"
+		},
+		{
+			"source": "DEP",
+			"target": "SHP",
+			"label": "ship"
+		},
+		{
+			"source": "DEP",
+			"target": "CRU",
+			"label": "cruise"
+		},
+		{
+			"source": "DEP",
+			"target": "DMT",
+			"label": "method"
+		},
+		{
+			"source": "DEP",
+			"target": "COU",
+			"label": "country"
+		},
+		{
+			"source": "DEP",
+			"target": "SIT",
+			"label": "sites"
+		},
+		{
+			"source": "CRU",
+			"target": "LIN",
+			"label": "lines"
+		},
+		{
+			"source": "LOG",
+			"target": "ALR",
+			"label": "alerts"
+		},
+		{
+			"source": "LOG",
+			"target": "STS",
+			"label": "statuses"
+		},
+		{
+			"source": "LOG",
+			"target": "UPD",
+			"label": "updates"
+		},
+		{
+			"source": "LOG",
+			"target": "QCF",
+			"label": "qc_flags"
+		},
+		{
+			"source": "SEN",
+			"target": "SEM",
+			"label": "model"
+		},
+		{
+			"source": "SEM",
+			"target": "MAN",
+			"label": "manufacturer"
+		},
+		{
+			"source": "SEM",
+			"target": "VAR",
+			"label": "supported_variables"
+		},
+		{
+			"source": "PTM",
+			"target": "PLT",
+			"label": "type"
+		},
+		{
+			"source": "TEL",
+			"target": "TTY",
+			"label": "type"
+		},
+		{
+			"source": "TEL",
+			"target": "TSV",
+			"label": "service"
+		},
+		{
+			"source": "TEL",
+			"target": "TFM",
+			"label": "format"
+		},
+		{
+			"source": "TEL",
+			"target": "TRS",
+			"label": "tracking_system"
+		},
+		{
+			"source": "TEL",
+			"target": "LAY",
+			"label": "latency"
+		},
+		{
+			"source": "RET",
+			"target": "SHP",
+			"label": "ship"
+		},
+		{
+			"source": "SHP",
+			"target": "VTY",
+			"label": "type"
+		},
+		{
+			"source": "VSP",
+			"target": "SEN",
+			"label": "sensor"
+		},
+		{
+			"source": "VSP",
+			"target": "VAR",
+			"label": "activated_variable"
+		},
+		{
+			"source": "VSP",
+			"target": "SUN",
+			"label": "unit"
+		},
+		{
+			"source": "VSP",
+			"target": "SLC",
+			"label": "location"
+		},
+		{
+			"source": "VSP",
+			"target": "EXP",
+			"label": "exposure"
+		},
+		{
+			"source": "VSP",
+			"target": "SSS",
+			"label": "operating_status"
+		},
+		{
+			"source": "VSP",
+			"target": "DPM",
+			"label": "data_processing_method"
+		},
+		{
+			"source": "STS",
+			"target": "MST",
+			"label": "latest_mission_status"
+		},
+		{
+			"source": "MST",
+			"target": "STT",
+			"label": "type"
+		},
+		{
+			"source": "RET",
+			"target": "ENC",
+			"label": "ending_cause"
+		},
+		{
+			"source": "DAT",
+			"target": "OBS",
+			"label": "observations"
+		},
+		{
+			"source": "PLA",
+			"target": "TEL",
+			"label": "telecom"
+		},
+		{
+			"source": "OBS",
+			"target": "VAR",
+			"label": "variable"
+		},
+		{
+			"source": "PLM",
+			"target": "MAN",
+			"label": "manufacturer"
+		}
+	]
+  }
+  
