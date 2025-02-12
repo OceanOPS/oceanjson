@@ -10,9 +10,16 @@ Facilitate integration and ensure seamless metadata exchange between nodes.
 
 The format is broken down into Key Entities (Mission, Platform, Ship, Cruise, Contact, Site, Observation, Telecom, Status, Agency, ..) each with their own schema.
 
-## Validation
+These are based on the classes, or groups of classes within the OceanMeta ontology.
 
-JSON Schema files for each key entity in /schemas directory.
+We include for each schema and it's fields the the codes and types from the OceanMeta MCD. 
+
+The keywords oceanMetaCode and oceanMetaType are used for this.
+
+These won't affect validation but provide valuable context, with the following benefits:
+- Traceability: Users can cross-reference these codes with OceanMeta documentation for more details.
+- Documentation Automation: You could auto-generate schema documentation from these codes.
+- Validation Support: Developers can build custom tools to check if data aligns with both JSON Schema and MCD standards.
 
 ## Examples
 

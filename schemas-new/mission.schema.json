@@ -4,46 +4,65 @@
 	"title": "Mission",
 	"description": "Operational period of a platform for data collection and transmission aligned with GOOS objectives.",
 	"type": "object",
+	"oceanMetaCode": "MIS",
 	"properties": {
 	  "wigos_id": {
 		"type": "string",
-		"description": "The WIGOS Identifier assigned to the mission."
+		"description": "The WIGOS Identifier assigned to the mission.",
+		"oceanMetaCode": "MIS-01",
+		"oceanMetaType": "string"
 	  },
 	  "program": {
 		"$ref": "program.schema.json",
-		"description": "The program responsible for the mission."
+		"description": "The program responsible for the mission.",
+		"oceanMetaCode": "MIS-02",
+		"oceanMetaType": "PRO"
 	  },
 	  "platform": {
 		"$ref": "platform.schema.json",
-		"description": "The platform involved in the mission."
+		"description": "The platform involved in the mission.",
+		"oceanMetaCode": "MIS-03",
+		"oceanMetaType": "PLA"
 	  },
 	  "deployment": {
 		"$ref": "deployment.schema.json",
-		"description": "Details of the deployment phase of the mission."
+		"description": "Details of the deployment phase of the mission.",
+		"oceanMetaCode": "MIS-04",
+		"oceanMetaType": "DEP"
 	  },
 	  "variable_setups": {
 		"type": "array",
 		"items": {
 		  "$ref": "variable_setup.schema.json"
 		},
-		"description": "List of variable setups configured for the mission."
+		"description": "List of variable setups configured for the mission.",
+		"oceanMetaCode": "MIS-05",
+		"oceanMetaType": "VSP[]"
 	  },
 	  "log": {
 		"$ref": "log.schema.json",
-		"description": "Mission log capturing key activities and updates."
+		"description": "Mission log capturing key activities and updates.",
+		"oceanMetaCode": "MIS-06",
+		"oceanMetaType": "LOG"
 	  },
 	  "data": {
 		"$ref": "data.schema.json",
-		"description": "Data collected during the mission."
+		"description": "Data collected during the mission.",
+		"oceanMetaCode": "MIS-07",
+		"oceanMetaType": "DAT"
 	  },
 	  "retrieval": {
 		"$ref": "retrieval.schema.json",
-		"description": "Details of the mission retrieval phase."
+		"description": "Details of the mission retrieval phase.",
+		"oceanMetaCode": "MIS-08",
+		"oceanMetaType": "RET"
 	  },
 	  "passport_delivery_date": {
 		"type": "string",
 		"format": "date",
-		"description": "The date when the mission passport was delivered."
+		"description": "The date when the mission passport was delivered.",
+		"oceanMetaCode": "MIS-09",
+		"oceanMetaType": "date"
 	  }
 	},
 	"required": ["wigos_id", "program", "platform", "deployment"],
