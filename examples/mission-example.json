@@ -1,0 +1,216 @@
+{
+	"wigos_id": "0-12345-ABC",
+	"program": {
+	  "id": "1001871",
+	  "name": "AOML Glider program is part of the CARICOOS Network",
+	  "country": {
+		"id": "US",
+		"name": "United States"
+	  },
+	  "contact_contributions": [
+		{
+		  "contact": {
+			"first_name": "Alice",
+			"last_name": "Dupont",
+			"email": "alice.dupont@example.org"
+		  },
+		  "role": {
+			"id": 230,
+			"name": "Operations Manager"
+		  }
+		}
+	  ],
+	  "agency_contributions": [
+		{
+		  "agency": {
+			"id": 1000970,
+			"name": "ALSEAMAR"
+		  },
+		  "role": {
+			"id": 3,
+			"name": "Operating agency"
+		  }
+		}
+	  ]
+	},
+	"platform": {
+	  "id": 36739872,
+	  "ref": "1800910_001",
+	  "serial_number": "164",
+	  "internal_id": "ifm09_depl16",
+	  "model": {
+		"id": 35,
+		"name": "Slocum G2",
+		"type": {
+			"id": 55,
+		  	"name": "Underwater Glider"
+		}
+	  },
+	  "name": "Glider ALseamar 001",
+	  "networks": [
+		{
+		  "id": 1000356,
+		  "name": "OceanGliders"
+		}
+	  ],
+	  "gts_allocations": [
+		{
+		  "identifier": "1800910",
+		  "start_date": "2022-01-01T00:00:00",
+		  "end_date": "2024-01-01T00:00:00"
+		}
+	  ],
+	  "contact_contributions": [
+		{
+		  "contact": {
+			"first_name": "Alice",
+			"last_name": "Dupont",
+			"email": "alice.dupont@example.org"
+		  },
+		  "role": {
+			"id": 230,
+			"name": "Operations Manager"
+		  }
+		}
+	  ],
+	  "agency_contributions": [
+		{
+		  "agency": {
+			"id": 1000970,
+			"name": "ALSEAMAR"
+		  },
+		  "role": {
+			"id": 3,
+			"name": "Operating agency"
+		  }
+		}
+	  ],
+	  "telecom": {
+		"number": "309879873",
+		"imei": "998323078521895",
+		"type": {
+			"id": 3,
+			"name": "IRIDIUM"
+		},
+		"service": {
+			"id": 65,
+			"name": "TURBOWIN",
+			"description": "TurboWin Obs2Server"
+		},
+		"format": {
+			"id": 1000005,
+			"name": "TAC",
+			"description": "Traditional Alphanumeric Code not leisted below"
+		},
+		"latency": {
+			"id": 2,
+			"name": "NRT",
+			"minutes": 20
+		},
+		"tracking_system": {
+			"id": 0,
+			"name": "ARGOS DOPPLER",
+			"wigos_code": "argosDoppler"
+		}
+	  }
+	},
+	"deployment": {
+	  "start_date": "2022-05-15T00:00:00",
+	  "latitude": 45.1233,
+	  "longitude": -12.4563,
+	  "ship": {
+		"id": 20002091,
+		"name": "TOTO RV Explorer",
+		"type": {
+		  "id": 34,
+		  "name": "Research Vessel"
+		}
+	  },
+	  "cruise": {
+		"id": 2650292,
+		"name": "Atlantic Mission 2022",
+		"start_date": "2022-05-01T00:00:00",
+		"end_date": "2022-06-01T00:00:00"
+	  },
+	  "sites": [{
+		  "id": 64,
+		  "name": "IMOS-POLYNYA",
+		  "description": "Polynya Array"
+	  }]
+	},
+	"variable_setups": [
+	  {
+		"sensor": {
+		  "model": {
+			"name": "SEABIRD_SBE41",
+			"manufacturer": {
+			  "name": "SensorTech",
+			  "url": "https://sensortech.com"
+			}
+		  },
+		  "serial_number": "178"
+		},
+		"activated_variable": {
+		  "id": 3,
+		  "name": "Temperature"
+		},
+		"activation_date": "2022-05-15T00:00:00",
+		"deactivation_date": "2023-05-15T00:00:00"
+	  }
+	],
+	"log": {
+	  "alerts": [],
+	  "statuses": [
+		{
+		  "start_date": "2022-05-15T00:00:00",
+		  "type": {
+			"id": 6,
+			"name": "Operational",
+			"rank": 4
+		  }
+		}
+	  ],
+	  "locations": [
+		{
+		  "date": "2023-06-01T00:00:00",
+		  "latitude": 46.7893,
+		  "longitude": -13.9873
+		},
+		{
+			"date": "2022-06-20T12:00:00",
+			"latitude": 45.5003,
+			"longitude": -12.7003
+		}
+	  ]
+	},
+	"retrieval": {
+	  "start_date": "2023-06-01T00:00:00",
+	  "end_date": "2023-06-15T00:00:00",
+	  "ship": {
+		"id": "SHP-002",
+		"name": "RV Discovery"
+	  },
+	  "latitude": 46.7893,
+	  "longitude": -13.9873,
+	  "ending_cause": {
+		"id": 2,
+		"name": "Recovered"
+	  }
+	},
+	"passport_delivery_date": "2022-06-01T00:00:00",
+	"data": {
+	  "observations": [
+		{
+		  "id": 398009,
+		  "observation_date": "2022-06-20T12:00:00",
+		  "latitude": 45.5003,
+		  "longitude": -12.7003,
+		  "variable": {
+			"id": 3,
+			"name": "Temperature"
+		  }
+		}
+	  ]
+	}
+  }
+  
