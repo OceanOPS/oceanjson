@@ -1,7 +1,7 @@
 {
 	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
-	"@id": "https://www.ocean-ops.org/oceanmeta/platforms/36739872",
-	"@type": "oceanmeta:Platform",
+	"@id": "https://www.ocean-ops.org/oceanmeta/missions/36739872",
+	"@type": "oceanmeta:Mission",
 	
 	"wigosId": "0-12345-ABC",
   
