@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://oceanjson.org/schemas/Line.schema.json",
+	"$id": "https://oceanjson.org/schemas/line.schema.json",
 	"title": "LINE",
 	"description": "A schema representing a line entity.",
 	"type": "object",

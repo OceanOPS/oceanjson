@@ -1,6 +1,6 @@
 # OceanJSON
 
-An integrated GOOS metadata JSON schema based on the <a target="_blank" href="https://www.ocean-ops.org/docs/">OceanMeta</a> metadata standard.
+Integrated GOOS metadata JSON schemas based on the <a target="_blank" href="https://www.ocean-ops.org/docs/">OceanMeta</a> metadata standard.
 
 ## Goals
 
@@ -12,7 +12,9 @@ The format is broken down into Key Entities (Mission, Platform, Ship, Cruise, Co
 
 These are based on the classes, or groups of classes within the OceanMeta ontology.
 
-We include for each schema and it's fields the the codes and types from the OceanMeta MCD. 
+Most classes extend a Schema.org schema (eg. Contact extends www.schema.org/Person)
+
+We include for each schema and it's fields the OceanMeta MCD codes and types. 
 
 The keywords oceanMetaCode and oceanMetaType are used for this.
 

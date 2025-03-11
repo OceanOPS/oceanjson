@@ -1,0 +1,53 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://www.ocean-ops.org/oceanjson/schemas/VariableSetup.schema.json",
+	"title": "Variable Setup",
+	"description": "The setup and configuration of a sensor to measure a specific variable.",
+	"type": "object",
+	"oceanMetaCode": "VSP",
+	"properties": {
+	  "sensor": {
+		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Sensor.schema.json",
+		"description": "Reference to the sensor used for the variable measurement.",
+		"oceanMetaCode": "VSP-01",
+		"oceanMetaType": "SEN"
+	  },
+	  "activatedVariable": {
+		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Variable.schema.json",
+		"description": "The variable that the sensor is configured to measure.",
+		"oceanMetaCode": "VSP-02",
+		"oceanMetaType": "VAR"
+	  },
+	  "activationDate": {
+		"type": "string",
+		"format": "date",
+		"description": "Date when the sensor started measuring the variable.",
+		"oceanMetaCode": "VSP-03",
+		"oceanMetaType": ""
+	  },
+	  "deactivationDate": {
+		"type": "string",
+		"format": "date",
+		"description": "Date when the sensor stopped measuring the variable.",
+		"oceanMetaCode": "VSP-04",
+		"oceanMetaType": ""
+	  },
+	  "calibrationDate": {
+		"type": "string",
+		"format": "date",
+		"description": "The last calibration date of the sensor.",
+		"oceanMetaCode": "VSP-14",
+		"oceanMetaType": ""
+	  },
+	  "nextCalibrationDate": {
+		"type": "string",
+		"format": "date",
+		"description": "The next scheduled calibration date of the sensor.",
+		"oceanMetaCode": "VSP-15",
+		"oceanMetaType": ""
+	  }
+	},
+	"required": ["sensor", "activatedVariable"],
+	"additionalProperties": false
+}
+  

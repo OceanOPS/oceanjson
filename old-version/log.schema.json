@@ -1,0 +1,49 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/log.schema.json",
+	"title": "Log",
+	"description": "History and progress log of all events related to a mission.",
+	"type": "object",
+	"oceanMetaCode": "LOG",
+	"properties": {
+	  "alerts": {
+		"type": "array",
+		"description": "List of alerts related to the mission.",
+		"items": {
+		  "$ref": "https://github.com/OceanOPS/oceanjson/schemas/alert.schema.json"
+		},
+		"oceanMetaCode": "LOG-01",
+		"oceanMetaType": "ALR[]"
+	  },
+	  "statuses": {
+		"type": "array",
+		"description": "List of mission statuses over time.",
+		"items": {
+		  "$ref": "https://github.com/OceanOPS/oceanjson/schemas/status.schema.json"
+		},
+		"oceanMetaCode": "LOG-02",
+		"oceanMetaType": "STS[]"
+	  },
+	  "updates": {
+		"type": "array",
+		"description": "Log of updates made to the mission metadata.",
+		"items": {
+		  "$ref": "https://github.com/OceanOPS/oceanjson/schemas/update.schema.json"
+		},
+		"oceanMetaCode": "LOG-03",
+		"oceanMetaType": "UPD[]"
+	  },
+	  "qc_flags": {
+		"type": "array",
+		"description": "Quality control flags applied to the mission or its data.",
+		"items": {
+		  "$ref": "https://github.com/OceanOPS/oceanjson/schemas/qc_flag.schema.json"
+		},
+		"oceanMetaCode": "LOG-04",
+		"oceanMetaType": "QCF[]"
+	  }
+	},
+	"required": ["alerts", "statuses"],
+	"additionalProperties": false
+  }
+  

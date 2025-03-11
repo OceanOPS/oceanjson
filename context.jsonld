@@ -1,75 +1,144 @@
 {
 	"@context": {
 	  "@version": 1.1,
-	  "@vocab": "https://oceanjson.org/vocab/",
-  
-	  "mission": "Mission",
-	  "wigos_id": "wigos_id",
-	  "start_date": "start_date",
-	  "end_date": "end_date",
-	  "passport_delivery_date": "passport_delivery_date",
-	  "program": { "@id": "program", "@type": "@id" },
-	  "platform": { "@id": "platform", "@type": "@id" },
-	  "deployment": { "@id": "deployment", "@type": "@id" },
-	  "retrieval": { "@id": "retrieval", "@type": "@id" },
-	  "log": { "@id": "log", "@type": "@id" },
-	  "data": { "@id": "data", "@type": "@id" },
-  
-	  "program_id": "program.id",
-	  "name": "name",
-	  "country": { "@id": "country", "@type": "@id" },
-	  "contact_contributions": "contact_contributions",
-	  "agency_contributions": "agency_contributions",
-  
-	  "platform_id": "platform.id",
-	  "ref": "ref",
-	  "serial_number": "serial_number",
-	  "internal_id": "internal_id",
-	  "model": { "@id": "model", "@type": "@id" },
-	  "networks": { "@id": "networks", "@type": "@id" },
-  
-	  "deployment_id": "deployment.id",
-	  "latitude": "latitude",
-	  "longitude": "longitude",
-	  "ship": { "@id": "ship", "@type": "@id" },
-	  "cruise": { "@id": "cruise", "@type": "@id" },
-  
-	  "retrieval_id": "retrieval.id",
-	  "ending_cause": { "@id": "ending_cause", "@type": "@id" },
-  
-	  "alerts": "alerts",
-	  "statuses": "statuses",
-	  "updates": "updates",
-	  "qc_flags": "qc_flags",
-  
-	  "observations": "observations",
-	  "observation_date": "observation_date",
-	  "variable": { "@id": "variable", "@type": "@id" },
-  
-	  "telecom": { "@id": "telecom", "@type": "@id" },
-	  "number": "number",
-	  "imei": "imei",
-	  "type": { "@id": "type", "@type": "@id" },
-  
-	  "contact": { "@id": "contact", "@type": "@id" },
-	  "first_name": "first_name",
-	  "last_name": "last_name",
-	  "email": "email",
-	  "agency": { "@id": "agency", "@type": "@id" },
-  
+	  "@vocab": "https://www.ocean-ops.org/docs#dictionary",
+	  "schema": "https://schema.org/",
+	  "oceanmeta": "https://www.ocean-ops.org/docs#ontology",
 	  "id": "@id",
-	  "identifier": "identifier",
-	  "status": { "@id": "status", "@type": "@id" },
-  
-	  "unit": { "@id": "unit", "@type": "@id" },
-	  "range_min": "range_min",
-	  "range_max": "range_max",
-	  "precision": "precision",
-	  "accuracy": "accuracy",
-	  "uncertainty": "uncertainty",
-  
-	  "created_at": { "@id": "created_at", "@type": "xsd:dateTime" },
-	  "updated_at": { "@id": "updated_at", "@type": "xsd:dateTime" }
+	  "type": "@type",
+	  
+	  "oceanMetaCode": {
+		"@type": "xsd:string"
+	  },
+	  
+	  "oceanMetaType": {
+		"@type": "xsd:string"
+	  },  
+
+	  "contactContribution": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/ContactContribution.schema.json",
+		"@type": "schema:Action"
+	  },
+	  
+	  "contact": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Contact.schema.json",
+		"@type": "schema:Person"
+	  },
+	  
+	  "country": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Country.schema.json",
+		"@type": "schema:Country"
+	  },
+	  
+	  "cruise": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Cruise.schema.json",
+		"@type": "schema:BoatTrip"
+	  },
+	  
+	  "deployment": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Deployment.schema.json",
+		"@type": "schema:Event"
+	  },
+	  
+	  "log": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Log.schema.json",
+		"@type": "@id"
+	  },
+	  
+	  "manufacturer": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Manufacturer.schema.json",
+		"@type": "schema:Organization"
+	  },
+	  
+	  "missionStatus": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/MissionStatus.schema.json",
+		"@type": "schema:Thing"
+	  },
+	  
+	  "mission": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Mission.schema.json",
+		"@type": "schema:Event"
+	  },
+
+	  "network": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Network.schema.json",
+		"@type": "schema:Organization"
+	  },
+
+	  "platform": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Platform.schema.json",
+		"@type": "schema:IndividualProduct"
+	  },
+	  
+	  "port": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Country.schema.json",
+		"@type": "schema:BoatTerminal"
+	  },
+
+	  "sensor": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Sensor.schema.json",
+		"@type": "schema:IndividualProduct"
+	  },
+
+	  "platformModel": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/PlatformModel.schema.json",
+		"@type": "schema:Product"
+	  },
+
+	  "sensorModel": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/SensorModel.schema.json",
+		"@type": "schema:Product"
+	  },
+
+	  "program": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Program.schema.json",
+		"@type": "schema:Thing"
+	  },
+
+	  "ship": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Ship.schema.json",
+		"@type": "schema:Vehicle"
+	  },
+
+	  "statusType": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/StatusType.schema.json",
+		"@type": "schema:Thing"
+	  },
+
+	  "status": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Status.schema.json",
+		"@type": "schema:Thing"
+	  },
+
+	  "telecomType": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/TelecomType.schema.json",
+		"@type": "schema:Thing"
+	  },
+
+	  "telecom": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Telecom.schema.json",
+		"@type": "schema:Thing"
+	  },
+
+	  "variableSetup": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/VariableSetup.schema.json",
+		"@type": "@id"
+	  },
+
+	  "variable": {
+		"@id": "https://www.ocean-ops.org/oceanjson/schemas/Variable.schema.json",
+		"@type": "schema:Thing"
+	  },
+
+	  "dateCreated": {
+		"@id": "schema:dateCreated",
+		"@type": "xsd:dateTime"
+	  },
+
+	  "dateModified": {
+		"@id": "schema:dateModified",
+		"@type": "xsd:dateTime"
+	  }
 	}
   }
   

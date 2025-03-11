@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Manufacturer.schema.json",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/manufacturer.schema.json",
 	"title": "Manufacturer",
 	"description": "Details about the manufacturer of sensors, platforms, or related equipment.",
 	"type": "object",
@@ -20,5 +20,5 @@
 	},
 	"required": ["name"],
 	"additionalProperties": false
-}
+  }
   

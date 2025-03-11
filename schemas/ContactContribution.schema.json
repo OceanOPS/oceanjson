@@ -1,0 +1,35 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://www.ocean-ops.org/oceanjson/schemas/ContactContribution.schema.json",
+	"@context": {
+		"oceanmeta": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+		"schema": "https://schema.org/",
+		"contact": "https://www.ocean-ops.org/oceanjson/schemas/Contact.schema.json",
+		"role": "https://www.ocean-ops.org/oceanjson/schemas/ContactRole.schema.json"
+	  },
+	"@type": "oceanmeta:ContactContribution",
+	"title": "Contact Contribution",
+	"description": "The combination of a contact and their role in a program or towards a specific platform/mission.",
+	"type": "object",
+	"oceanMetaCode": "CCT",
+	"allOf": [
+	  {
+		"$ref": "https://schema.org/Action"
+	  }
+	],
+	"properties": {
+	  "agent": {
+		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Contact.schema.json",
+		"description": "Reference to the contact contributing to the program, platform, or mission.",
+		"oceanMetaCode": "CCT-01"
+	  },
+	  "role": {
+		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/ContactRole.schema.json",
+		"description": "The role of the contact in relation to the program, platform, or mission.",
+		"oceanMetaCode": "CCT-02"
+	  }
+	},
+	"required": ["contact", "role"],
+	"additionalProperties": false
+}
+  

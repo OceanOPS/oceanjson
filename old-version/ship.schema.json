@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Ship.schema.json",
+	"$id": "https://github.com/OceanOPS/oceanjson/schemas/ship.schema.json",
 	"title": "Ship",
 	"description": "Detailed information about ships involved in deployment, retrieval, or mission operations.",
 	"type": "object",
@@ -24,7 +24,7 @@
 		"oceanMetaCode": "SHP-03",
 		"oceanMetaType": ""
 	  },
-	  "callSign": {
+	  "call_sign": {
 		"type": "string",
 		"description": "The ship's radio call sign.",
 		"oceanMetaCode": "SHP-04",
@@ -32,31 +32,29 @@
 	  },
 	  "mmsi": {
 		"type": "string",
-		"pattern": "^[0-9]{9}$", 
 		"description": "Maritime Mobile Service Identity (MMSI) number of the ship.",
 		"oceanMetaCode": "SHP-05",
 		"oceanMetaType": ""
 	  },
 	  "imo": {
 		"type": "string",
-		"pattern": "^[0-9]{7}$",
 		"description": "International Maritime Organization (IMO) number assigned to the ship.",
 		"oceanMetaCode": "SHP-06",
 		"oceanMetaType": ""
 	  },
 	  "type": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/ShipType.schema.json",
+		"$ref": "ship_type.schema.json",
 		"description": "Type of the ship, such as research vessel or cargo ship.",
 		"oceanMetaCode": "SHP-07",
 		"oceanMetaType": "VTY"
 	  },
-	  "flagCountry": {
+	  "flag_country": {
 		"type": "string",
 		"description": "Country of registration (flag state) for the ship.",
 		"oceanMetaCode": "SHP-08",
 		"oceanMetaType": ""
 	  },
-	  "hideMetadata": {
+	  "hide_metadata": {
 		"type": "boolean",
 		"description": "Indicates if the ship's metadata should be hidden for confidentiality reasons.",
 		"oceanMetaCode": "SHP-09",
@@ -86,25 +84,25 @@
 		"oceanMetaCode": "SHP-13",
 		"oceanMetaType": ""
 	  },
-	  "cargoHeight": {
+	  "cargo_height": {
 		"type": "number",
 		"description": "Height of the cargo area in meters.",
 		"oceanMetaCode": "SHP-14",
 		"oceanMetaType": ""
 	  },
-	  "bridgeBow": {
+	  "bridge_bow": {
 		"type": "number",
 		"description": "Distance from the ship's bridge to the bow in meters.",
 		"oceanMetaCode": "SHP-15",
 		"oceanMetaType": ""
 	  },
-	  "maxSpeed": {
+	  "max_speed": {
 		"type": "number",
 		"description": "Maximum speed of the ship in knots.",
 		"oceanMetaCode": "SHP-16",
 		"oceanMetaType": ""
 	  },
-	  "shippingCompany": {
+	  "shipping_company": {
 		"type": "string",
 		"description": "Name of the shipping company or agency managing the ship.",
 		"oceanMetaCode": "SHP-17",
@@ -116,20 +114,20 @@
 		"oceanMetaCode": "SHP-18",
 		"oceanMetaType": ""
 	  },
-	  "shoreSontactName": {
+	  "shore_contact_name": {
 		"type": "string",
 		"description": "Name of the primary contact person onshore for the ship.",
 		"oceanMetaCode": "SHP-19",
 		"oceanMetaType": ""
 	  },
-	  "shoreContactEmail": {
+	  "shore_contact_email": {
 		"type": "string",
 		"format": "email",
 		"description": "Email address of the shore-based contact person.",
 		"oceanMetaCode": "SHP-20",
 		"oceanMetaType": ""
 	  },
-	  "seaContactEmail": {
+	  "sea_contact_email": {
 		"type": "string",
 		"format": "email",
 		"description": "Email address for contacting the ship while at sea.",
@@ -139,5 +137,5 @@
 	},
 	"required": ["id", "name"],
 	"additionalProperties": false
-}
+  }
   
