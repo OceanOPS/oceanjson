@@ -8,14 +8,14 @@ Facilitate integration and ensure seamless metadata exchange between nodes.
 
 ## Entities
 
-The format is broken down into Key Entities (Mission, Platform, Ship, Cruise, Contact, Site, Observation, Telecom, Status, Agency, ..) each with their own schema.
-
+The format is broken down into Classes (Mission, Platform, Ship, Cruise, Contact,...) each with their own schema.
 These are based on the classes, or groups of classes within the OceanMeta ontology.
+Classes in PascalCase and attributes in camelCase.
 
 Most classes extend a Schema.org schema (eg. Contact extends www.schema.org/Person)
+These extensions are cited in the context.jsonld file, and attributes imported with the "allOf" attribute within each schema.
 
-We include for each schema and it's fields the OceanMeta MCD codes and types. 
-
+The equivalent OceanMeta MCD codes and types are included for each schema and its fields. 
 The keywords oceanMetaCode and oceanMetaType are used for this.
 
 These won't affect validation but provide valuable context, with the following benefits:
