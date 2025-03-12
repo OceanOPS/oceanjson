@@ -1,15 +1,12 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/ContactRole.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:ContactRole", "schema:Role"],
 	"title": "Contact Role",
 	"description": "The way a contact is contributing.",
 	"type": "object",
 	"oceanMetaCode": "CRL",
-	"allOf": [
-	  {
-		"$ref": "https://schema.org/Role"
-	  }
-	],
 	"properties": {
 	  "roleName": {
 		"type": "string",

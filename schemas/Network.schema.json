@@ -1,6 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Network.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Network", "schema:Organization"],
 	"title": "Network",
 	"description": "A group of platform missions.",
 	"type": "object",

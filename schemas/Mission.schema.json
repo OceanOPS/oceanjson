@@ -1,6 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Mission.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Mission", "schema:Event"],
 	"title": "Mission",
 	"description": "Operational period of a platform for data collection and transmission aligned with GOOS objectives.",
 	"type": "object",
@@ -13,19 +15,19 @@
 		"oceanMetaType": "string"
 	  },
 	  "program": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Program.schema.json",
+		"$ref": "oceanmeta:Program",
 		"description": "The program responsible for the mission.",
 		"oceanMetaCode": "MIS-02",
 		"oceanMetaType": "PRO"
 	  },
 	  "platform": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Platform.schema.json",
+		"$ref": "oceanmeta:Platform",
 		"description": "The platform involved in the mission.",
 		"oceanMetaCode": "MIS-03",
 		"oceanMetaType": "PLA"
 	  },
 	  "deployment": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Deployment.schema.json",
+		"$ref": "oceanmeta:Deployment",
 		"description": "Details of the deployment phase of the mission.",
 		"oceanMetaCode": "MIS-04",
 		"oceanMetaType": "DEP"
@@ -33,14 +35,14 @@
 	  "variableSetups": {
 		"type": "array",
 		"items": {
-		  "$ref": "https://www.ocean-ops.org/oceanjson/schemas/VariableSetup.schema.json"
+			"$ref": "oceanmeta:VariableSetup"
 		},
 		"description": "List of variable setups configured for the mission.",
 		"oceanMetaCode": "MIS-05",
 		"oceanMetaType": "VSP[]"
 	  },
 	  "log": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Log.schema.json",
+		"$ref": "oceanmeta:Log",
 		"description": "Mission log capturing key activities and updates.",
 		"oceanMetaCode": "MIS-06",
 		"oceanMetaType": "LOG"

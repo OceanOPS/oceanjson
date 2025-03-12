@@ -1,6 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://github.com/OceanOPS/oceanjson/schemas/Platform.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Platform", "schema:IndividualProduct", "sosa:Platform"],
 	"title": "Platform",
 	"description": "The physical system (e.g., float, buoy, tagged animal, station, mooring).",
 	"type": "object",
@@ -31,7 +33,7 @@
 		"oceanMetaType": "string"
 	  },
 	  "model": {
-		"$ref": "platform_model.schema.json",
+		"$ref": "oceanmeta:PlatformModel",
 		"description": "The model of the platform.",
 		"oceanMetaCode": "PLA-05",
 		"oceanMetaType": "PLM"
@@ -51,7 +53,7 @@
 	  "networks": {
 		"type": "array",
 		"items": {
-		  "$ref": "network.schema.json"
+			"$ref": "oceanmeta:Network"
 		},
 		"description": "List of networks associated with the platform.",
 		"oceanMetaCode": "PLA-08",
@@ -60,7 +62,7 @@
 	  "gtsAllocations": {
 		"type": "array",
 		"items": {
-		  "$ref": "gts_allocation.schema.json"
+			"$ref": "oceanmeta:GtsAllocation"
 		},
 		"description": "GTS allocations for the platform.",
 		"oceanMetaCode": "PLA-09",
@@ -69,7 +71,7 @@
 	  "contactContributions": {
 		"type": "array",
 		"items": {
-		  "$ref": "contact_contribution.schema.json"
+			"$ref": "oceanmeta:ContactContribution"
 		},
 		"description": "List of contacts contributing to the platform.",
 		"oceanMetaCode": "PLA-10",
@@ -78,38 +80,38 @@
 	  "agencyContributions": {
 		"type": "array",
 		"items": {
-		  "$ref": "agency_contribution.schema.json"
+			"$ref": "oceanmeta:AgencyContribution"
 		},
 		"description": "List of agencies contributing to the platform.",
 		"oceanMetaCode": "PLA-11",
 		"oceanMetaType": "ACT[]"
 	  },
 	  "hardware": {
-		"$ref": "hardware.schema.json",
+		"$ref": "oceanmeta:Hardware",
 		"description": "Hardware details of the platform.",
 		"oceanMetaCode": "PLA-12",
 		"oceanMetaType": "HAR"
 	  },
 	  "software": {
-		"$ref": "software.schema.json",
+		"$ref": "oceanmeta:Software",
 		"description": "Software details of the platform.",
 		"oceanMetaCode": "PLA-13",
 		"oceanMetaType": "SOF"
 	  },
 	  "configuration": {
-		"$ref": "configuration.schema.json",
+		"$ref": "oceanmeta:Configuration",
 		"description": "Configuration details of the platform.",
 		"oceanMetaCode": "PLA-14",
 		"oceanMetaType": "CFG"
 	  },
 	  "telecom": {
-		"$ref": "telecom.schema.json",
+		"$ref": "oceanmeta:Telecom",
 		"description": "Primary telecom details of the platform.",
 		"oceanMetaCode": "PLA-15",
 		"oceanMetaType": "TEL"
 	  },
 	  "backupTelecom": {
-		"$ref": "telecom.schema.json",
+		"$ref": "oceanmeta:Telecom",
 		"description": "Backup telecom details of the platform.",
 		"oceanMetaCode": "PLA-16",
 		"oceanMetaType": "TEL"

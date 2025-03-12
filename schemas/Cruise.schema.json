@@ -1,15 +1,12 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Cruise.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Cruise", "schema:BoatTrip"],
 	"title": "Cruise",
 	"description": "Operational period of a ship.",
 	"type": "object",
 	"oceanMetaCode": "CRU",
-	"allOf": [
-	  {
-		"$ref": "https://schema.org/BoatTrip"
-	  }
-	],
 	"properties": {
 	  "identifier": {
 		"type": "string",
@@ -35,7 +32,7 @@
 		"type": "array",
 		"description": "Lines surveyed or traversed during the cruise.",
 		"items": {
-		  "$ref": "https://www.ocean-ops.org/oceanjson/schemas/Line.schema.json"
+			"$ref": "oceanmeta:Line"
 		},
 		"oceanMetaCode": "CRU-04",
 		"oceanMetaType": "LIN[]"

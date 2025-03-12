@@ -1,0 +1,43 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Port.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Port", "schema:BoatTerminal"],
+	"title": "Port",
+	"type": "object",
+	"oceanMetaCode": "POR",
+	"properties": {
+	  "country_code": {
+		"type": "string",
+		"minLength": 2,
+		"maxLength": 2,
+		"description": "Two-letter country code of the port",
+		"oceanMetaCode": "POR-01"
+	  },
+	  "code": {
+		"type": "string",
+		"minLength": 3,
+		"maxLength": 3,
+		"description": "Three-letter code of the port",
+		"oceanMetaCode": "POR-02"
+	  },
+	  "code_full": {
+		"type": "string",
+		"minLength": 5,
+		"maxLength": 5,
+		"description": "Full code of the port (combination of country code and port code)",
+		"oceanMetaCode": "POR-03"
+	  },
+	  "code_name": {
+		"type": "string",
+		"description": "Full name of the port",
+		"oceanMetaCode": "POR-04"
+	  },
+	  "code_name_simple": {
+		"type": "string",
+		"description": "Simplified name of the port",
+		"oceanMetaCode": "POR-05"
+	  }
+	},
+	"required": ["countryCode", "code", "codeFull", "codeName", "codeNameSimple"]
+  }

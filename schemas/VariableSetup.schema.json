@@ -1,19 +1,21 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/VariableSetup.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:VariableSetup", "sosa:Deployment"],
 	"title": "Variable Setup",
 	"description": "The setup and configuration of a sensor to measure a specific variable.",
 	"type": "object",
 	"oceanMetaCode": "VSP",
 	"properties": {
 	  "sensor": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Sensor.schema.json",
+		"$ref": "oceanmeta:Sensor",
 		"description": "Reference to the sensor used for the variable measurement.",
 		"oceanMetaCode": "VSP-01",
 		"oceanMetaType": "SEN"
 	  },
 	  "activatedVariable": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Variable.schema.json",
+		"$ref": "oceanmeta:Variable",
 		"description": "The variable that the sensor is configured to measure.",
 		"oceanMetaCode": "VSP-02",
 		"oceanMetaType": "VAR"

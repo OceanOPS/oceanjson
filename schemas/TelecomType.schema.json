@@ -1,6 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/TelecomType.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:TelecomType", "schema:Thing"],
 	"title": "Telecom Type",
 	"description": "Defines the types of telecommunications systems used for data transmission in oceanographic platforms.",
 	"type": "object",

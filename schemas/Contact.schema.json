@@ -1,15 +1,12 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Contact.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Contact", "schema:Person"],
 	"title": "Contact",
 	"description": "Represents a person including their personal contact information.",
 	"type": "object",
 	"oceanMetaCode": "CON",
-	"allOf": [
-	  {
-		"$ref": "https://schema.org/Person"
-	  }
-	],
 	"properties": {
 	  "givenName": {
 		"type": "string",

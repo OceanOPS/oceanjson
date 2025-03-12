@@ -1,6 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Site.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Site"],
 	"title": "Site",
 	"description": "Represents a specific location associated with deployments or observations.",
 	"type": "object",

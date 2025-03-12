@@ -1,6 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Log.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": "oceanmeta:Log",
 	"title": "Log",
 	"description": "History and progress log of all events related to a mission.",
 	"type": "object",
@@ -10,7 +12,7 @@
 		"type": "array",
 		"description": "List of mission statuses over time.",
 		"items": {
-		  "$ref": "https://www.ocean-ops.org/oceanjson/schemas/Status.schema.json"
+			"$ref": "oceanmeta:Status"
 		},
 		"oceanMetaCode": "LOG-02",
 		"oceanMetaType": "STS[]"

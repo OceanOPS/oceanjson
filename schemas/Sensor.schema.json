@@ -1,13 +1,15 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Sensor.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Sensor", "schema:IndividualProduct", "sosa:Sensor"],
 	"title": "Sensor",
 	"description": "The physical instrument installed on a platform.",
 	"type": "object",
 	"oceanMetaCode": "SEN",
 	"properties": {
 	  "model": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/SensorModel.schema.json",
+		"$ref": "oceanmeta:SensorModel",
 		"description": "The model of the sensor.",
 		"oceanMetaCode": "SEN-02",
 		"oceanMetaType": "SEM"

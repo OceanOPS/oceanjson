@@ -1,6 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Deployment.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Deployment", "schema:Event"],
 	"title": "Deployment",
 	"description": "The initial operation of a mission - when the platform is activated.",
 	"type": "object",
@@ -30,13 +32,13 @@
 		"oceanMetaType": "number"
 	  },
 	  "ship": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Ship.schema.json",
+		"$ref": "oceanmeta:Ship",
 		"description": "Ship used during the deployment, if applicable.",
 		"oceanMetaCode": "DEP-04",
 		"oceanMetaType": "SHP"
 	  },
 	  "cruise": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Cruise.schema.json",
+		"$ref": "oceanmeta:Cruise",
 		"description": "Cruise associated with the deployment, if applicable.",
 		"oceanMetaCode": "DEP-05",
 		"oceanMetaType": "CRU"
@@ -54,7 +56,7 @@
 		"oceanMetaType": "number"
 	  },
 	  "country": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Country.schema.json",
+		"$ref": "oceanmeta:Country",
 		"description": "Country responsible for the deployment.",
 		"oceanMetaCode": "DEP-09",
 		"oceanMetaType": "COU"
@@ -62,7 +64,7 @@
 	  "sites": {
 		"type": "array",
 		"items": {
-		  "$ref": "https://www.ocean-ops.org/oceanjson/schemas/Site.schema.json"
+			"$ref": "oceanmeta:Site"
 		},
 		"description": "List of sites associated with the deployment.",
 		"oceanMetaCode": "DEP-10",

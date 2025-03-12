@@ -1,6 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Ship.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Ship", "schema:Vehicle"],
 	"title": "Ship",
 	"description": "Detailed information about ships involved in deployment, retrieval, or mission operations.",
 	"type": "object",
@@ -45,7 +47,7 @@
 		"oceanMetaType": ""
 	  },
 	  "type": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/ShipType.schema.json",
+		"$ref": "oceanmeta:ShipType",
 		"description": "Type of the ship, such as research vessel or cargo ship.",
 		"oceanMetaCode": "SHP-07",
 		"oceanMetaType": "VTY"

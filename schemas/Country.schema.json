@@ -1,15 +1,12 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Country.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Country", "schema:Country"],
 	"title": "Country",
 	"description": "United Nations member state or a group of states such as the European Union.",
 	"type": "object",
 	"oceanMetaCode": "COU",
-	"allOf": [
-	  {
-		"$ref": "https://schema.org/Country"
-	  }
-	],
 	"properties": {
 	  "identifier": {
 		"type": "string",

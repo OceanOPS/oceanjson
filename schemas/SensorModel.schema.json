@@ -1,6 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/SensorModel.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:SensorModel", "schema:Product"],
 	"title": "Sensor Model",
 	"description": "Represents the model of a sensor, including its manufacturer and supported variables.",
 	"type": "object",
@@ -13,7 +15,7 @@
 		"oceanMetaType": ""
 	  },
 	  "manufacturer": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Manufacturer.schema.json",
+		"$ref": "oceanmeta:Manufacturer",
 		"description": "The manufacturer of the sensor model.",
 		"oceanMetaCode": "SEM-03",
 		"oceanMetaType": "MAN"
@@ -22,7 +24,7 @@
 		"type": "array",
 		"description": "A list of variables that the sensor model can measure.",
 		"items": {
-		  "$ref": "variable.schema.json"
+			"$ref": "oceanmeta:Variable"
 		},
 		"oceanMetaCode": "SEM-04",
 		"oceanMetaType": "VAR[]"

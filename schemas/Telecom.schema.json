@@ -1,6 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Telecom.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Telecom", "schema:Thing"],
 	"title": "Telecom",
 	"description": "Setup of a telecommunications system onboard a platform.",
 	"type": "object",
@@ -26,13 +28,13 @@
 		"oceanMetaType": ""
 	  },
 	  "type": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/TelecomType.schema.json",
+		"$ref": "oceanmeta:TelecomType",
 		"description": "Type of telecom connection (e.g., satellite, cellular).",
 		"oceanMetaCode": "TEL-04",
 		"oceanMetaType": "TTY"
 	  },
 	  "trackingSystem": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/TrackingSystem.schema.json",
+		"$ref": "oceanmeta:TrackingSystem",
 		"description": "Tracking system used for telecom data transmission.",
 		"oceanMetaCode": "TEL-07",
 		"oceanMetaType": "TRS"

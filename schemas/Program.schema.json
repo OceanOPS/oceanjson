@@ -1,6 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Program.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Program"],
 	"title": "Program",
 	"description": "Structured collaboration group of independent entities with distinct roles.",
 	"type": "object",
@@ -19,7 +21,7 @@
 		"oceanMetaType": "string"
 	  },
 	  "country": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/Country.schema.json",
+		"$ref": "oceanmeta:Country",
 		"description": "Country associated with the program.",
 		"oceanMetaCode": "PRO-03",
 		"oceanMetaType": "COU"
@@ -27,7 +29,7 @@
 	  "contactContributions": {
 		"type": "array",
 		"items": {
-		  "$ref": "https://www.ocean-ops.org/oceanjson/schemas/ContactContribution.schema.json"
+			"$ref": "oceanmeta:ContactContribution"
 		},
 		"description": "List of contacts contributing to the program.",
 		"oceanMetaCode": "PRO-04",

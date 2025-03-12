@@ -1,6 +1,8 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://www.ocean-ops.org/oceanjson/schemas/Hardware.schema.json",
+	"@context": "https://www.ocean-ops.org/oceanjson/context.jsonld",
+	"@type": ["oceanmeta:Hardware", "schema:Thing"],
 	"title": "Hardware",
 	"description": "Hardware details of a platform, including battery, control board, and firmware information.",
 	"type": "object",
@@ -13,7 +15,7 @@
 		"oceanMetaType": ""
 	  },
 	  "battery": {
-		"$ref": "https://www.ocean-ops.org/oceanjson/schemas/battery.schema.json",
+		"$ref": "oceanmeta:Battery",
 		"description": "Reference to the battery installed in the hardware.",
 		"oceanMetaCode": "HAR-02",
 		"oceanMetaType": "BAT"
