@@ -26,6 +26,10 @@
 		"description": "The email address of the contact person, used for communication.",
 		"oceanMetaCode": "CON-03",
 		"oceanMetaType": "schema:email"
+	  },
+	  "country": {
+		"$ref": "oceanmeta:Country",
+		"description": "Country associated with the contact."
 	  }
 	},
 	"required": ["givenName", "familyName", "email"],

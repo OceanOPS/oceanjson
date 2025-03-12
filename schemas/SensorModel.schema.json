@@ -28,6 +28,10 @@
 		},
 		"oceanMetaCode": "SEM-04",
 		"oceanMetaType": "VAR[]"
+	  },
+	  "bodcId": {
+		"type": "string",
+		"description": "British Oceanographic Data Centre (BODC) identifier for the sensor"
 	  }
 	},
 	"required": ["name", "manufacturer", "supportedVariables"],

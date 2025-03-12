@@ -11,14 +11,22 @@
 	  "id": {
 		"type": "string",
 		"description": "The unique identifier of the variable.",
-		"oceanMetaCode": "VAR-01",
-		"oceanMetaType": ""
+		"oceanMetaCode": "VAR-01"
 	  },
 	  "name": {
 		"type": "string",
 		"description": "The name of the variable (e.g., temperature, salinity).",
-		"oceanMetaCode": "VAR-02",
-		"oceanMetaType": ""
+		"oceanMetaCode": "VAR-02"
+	  },
+	  "description": {
+		"type": "string",
+		"description": "Detailed description of the variable measured",
+		"oceanMetaCode": "VAR-03"
+	  },
+	  "wigosCode": {
+		"type": "string",
+		"description": "URL link to variable in WMO reference table",
+		"oceanMetaCode": "VAR-04"
 	  }
 	},
 	"required": ["id", "name"],
